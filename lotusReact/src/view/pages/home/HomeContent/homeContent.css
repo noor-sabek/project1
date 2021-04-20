@@ -1,0 +1,29 @@
+.picOfToy{
+  width:400px;
+  height:400px;
+}
+img.toypic{
+ height: auto;
+ width: 500px;
+}
+
+.Getoptions{
+    padding-top:50px;
+    color: #276063;
+    background-color: #e9ecef;
+
+}
+
+.nav-tabs .nav-link{
+    color: #84373e !important;
+    text-decoration: none!important;
+    margin-top:30px;
+   background-color: #dee5e8 !important;
+  }
+
+
+.nav-tabs .nav-link:hover{
+  opacity:0.8;
+  border-bottom: 1px solid #80450d ;
+
+}
