@@ -1,7 +1,4 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-
-  const MenuItems=[
+[
         {
             "title": "Home",
             "url":"/",
@@ -15,7 +12,7 @@ import ReactDOM from 'react-dom';
           "url":"Articles",
           "level":"2",
            "icon":"fa fa-book icon",
-
+           "dropdown":{}
 
 
     },
@@ -47,8 +44,4 @@ import ReactDOM from 'react-dom';
        "icon":"fa fa-user-circle icon"
 
 }
-];
-
-
-
-export default MenuItems ;
+]

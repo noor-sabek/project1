@@ -7,11 +7,11 @@ import HomeContent from './HomeContent/homeContent.js';
 class Home extends React.Component {
   render() {
     return (
-      <>
+      <div>
          <Header />
          <HomeContent/>
          <Footer/>
-      </>
+      </div>
     );
   }
 }

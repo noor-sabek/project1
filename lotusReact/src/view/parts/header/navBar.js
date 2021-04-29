@@ -14,11 +14,11 @@ class NavBar extends React.Component {
 
             <LogoPic/>
 
-              <button className="navbar-toggler navbar-toggler-right" onClick="" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+              <button className="navbar-toggler navbar-toggler-right" onClick=""  type="button" data-toggle="collapse" data-target="#collapsibleNavbar" aria-controls="collapsibleNavbar" aria-label="Toggle navigation">
                 <span className="navbar-toggler-icon"></span>
               </button>
 
-            <div className="collapse navbar-collapse">
+            <div className="collapse navbar-collapse" id="collapsibleNavbar">
               <ListItems/>
             </div>
 

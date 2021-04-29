@@ -8,12 +8,19 @@ import Card  from '../../general/card/card.js';
 import'./AboutusCards.css';
 
 
-
-
 class Cards extends React.Component {
+  constructor() {
+     super();
+     this.state = { data: [] };
+   }
 
+   componentDidMount() {
+     fetch(`/About`)
+       .then(res => res.json())
+       .then(json => this.setState({ data: json }));
+   }
   render() {
-   const Cards = AboutusCards.map((jsonpart) =>(
+   const Cards = this.state.data.map((jsonpart) =>(
         <Card item={jsonpart} />));
    return (
           <div class=" cards container  text-center mt-5">
