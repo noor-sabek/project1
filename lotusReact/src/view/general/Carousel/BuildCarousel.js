@@ -1,12 +1,22 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
-import CarouselItems from './CarouselItems.js';
+// import CarouselItems from './CarouselItems.js';
 import { Carousel } from 'react-responsive-carousel';
 
 
 class BuildCarousel extends React.Component  {
+  constructor() {
+     super();
+     this.state = { data: [] };
+   }
+
+   componentDidMount() {
+     fetch(`./carousel`)
+       .then(res => res.json())
+       .then(json => this.setState({ data: json }));
+   }
     render() {
-      const BuildCarousel = CarouselItems.map((jsonpart) =>(
+      const BuildCarousel = this.state.data.map((jsonpart) =>(
           <CarouselItem item={jsonpart} />));
         return (
                 <Carousel>
@@ -17,7 +27,7 @@ class BuildCarousel extends React.Component  {
 }
 
 
- 
+
 class CarouselItem extends React.Component  {
   constructor(props){
     super(props);

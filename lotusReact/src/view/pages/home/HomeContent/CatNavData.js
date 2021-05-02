@@ -57,6 +57,39 @@ import ReactDOM from 'react-dom';
                       + "Guides for parents including short videos and articles on how to introduce and use the materials with your baby.",
         "picture":"/img/levelspic/level4pic.jpg"
 
+},
+{
+    "title": "14 - 17",
+    "url":"#mn14t17",
+    "id": "mn14t17",
+     "information":"The Duck Pull Toy, which develops control, balance, and coordination. The Multi-Shape Puzzles, which provide a new spatial reasoning challenge. The Curved Dowel, which develops wrist strength and dexterity. The Box with Bins, which builds working memory, and fine and gross motor skills. The Coin Box, which offers hands-on experience with geometry. The Mailbox, which teaches early geometric concepts and new vocabulary. Guides for parents including short videos and articles on how to introduce and use the materials with your baby.",
+      "picture":"/img/levelspic/level5pic.jpg"
+
+},
+{
+    "title": "18 - 22",
+    "url":"#mn18t22",
+    "id": "mn18t22",
+     "information":"The Shapes on Pegs, which encourage spatial reasoning with 9 geometric solids. The Bolt Board, which builds strength, dexterity, and perseverance. The Language Set, a classic Montessori activity used to introduce new vocabulary. The Motor Planning Box, which encourages problem solving and builds strength. The Bead Stringing Set, which encourages creativity, precision, and coordination. The Sorting Set, which engages the tactile sense to classify shapes and textures. Guides for parents including short videos and articles on how to introduce and use the materials with your baby.",
+      "picture":"/img/levelspic/level6pic.jpg"
+
+},
+
+{
+    "title": "23 - 28",
+    "url":"#mn23t28",
+    "id": "mn23t28",
+     "information":"The Push Toy, which adds an extra challenge for walkers. The Dressing Frames, which move from hook-and-loop to snaps, to buttons. The Cylinder Drop, which encourages repetition and size discrimination. The Baking Set, a perfect platform for exploring STEM, literacy, and life skills. The Ring Slide, which gives your child practice with predicting consequences. The Lacing Activity, which encourages precision and patience. Guides for parents including short videos and articles on how to introduce and use the materials with your baby.",
+      "picture":"/img/levelspic/level7pic.jpg"
+
+},
+{
+    "title": "29 - 36",
+    "url":"#mn29t36",
+    "id": "mn29t36",
+     "information":"Includes: The Peg Board, which develops spatial reasoning and math skills. The Fabric Winder, which builds wrist strength and function. The Fraction Circles, which provide concrete experience with mathematical concepts. The Gluing Set, which teaches the basic skills your child needs to express themselves creatively. Three Mystery Bags, each with a specific theme, which build memory skills and encourage tactile exploration. Guides for parents including short videos and articles on how to introduce and use the materials with your baby.",
+      "picture":"/img/levelspic/level8pic.jpg"
+
 }
 ];
 export default CatNavData;
