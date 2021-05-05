@@ -4,19 +4,11 @@ import LiTitle from '../../../general/fillNavTap/LiTitle.js';
 import ULTITLE from'../../../general/fillNavTap/ULTitle.js';
 import FillTabContent from '../HomeContent/fillTabContent.js';
 import TabContent from '../HomeContent/tabContent.js';
-// import CatNavData from '../HomeContent/CatNavData.js';
 import  TitleHeading from './TitleHeading.js';
 
 class NavTabs extends React.Component {
-  constructor() {
-     super();
-     this.state = { data: [] };
-   }
-
-   componentDidMount() {
-     fetch(`./catNavData`)
-       .then(res => res.json())
-       .then(json => this.setState({ data: json }));
+  constructor(props) {
+     super(props);
    }
   render(){
     return (
@@ -34,8 +26,8 @@ class NavTabs extends React.Component {
           <div id="Monti-Toys" className=" part1 col-12 tab-pane fade mt-5 ">
               <h3>Select Your Child's Age</h3>
               <div className="container">
-                    <ULTITLE myjson={this.state.data}/>
-                    <FillTabContent myjson={this.state.data} />
+                    <ULTITLE myjson={this.props.data}/>
+                    <FillTabContent myjson={this.props.data} />
              </div>
           </div>
 

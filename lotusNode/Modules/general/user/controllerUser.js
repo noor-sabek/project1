@@ -1,15 +1,9 @@
-module.exports={
+
+const express = require('express');
+const router = express.Router();
+const json = require('./userDB');
 
 
- signUp:(req, res) => {
-     res.status(200).json({
-      message:'SignUp'
-    })
-},
- logIn:(req, res) => {
-    res.status(200).json({
-     message:'login'
-    })
- }
+router.get('/',json.userPage)
 
-}
+module.exports = router;

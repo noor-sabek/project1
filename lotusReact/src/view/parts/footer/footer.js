@@ -7,7 +7,11 @@ import LogoPic from '../../general/logo/logo.js';
 import './footer.css';
 
 
-const FooterPage = () => {
+class FooterPage extends React.Component {
+  constructor(props) {
+    super(props);
+  }
+  render() {
   return (
     <MDBFooter  className="font-small pt-4 mt-4 " >
       <MDBContainer fluid className="text-center text-md-left ">
@@ -59,6 +63,6 @@ const FooterPage = () => {
       </div>
   </MDBFooter>
   );
+ }
 }
-
 export default FooterPage;

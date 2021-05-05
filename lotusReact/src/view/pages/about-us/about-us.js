@@ -9,18 +9,12 @@ import'./AboutusCards.css';
 
 
 class Cards extends React.Component {
-  constructor() {
-     super();
-     this.state = { data: [] };
-   }
-
-   componentDidMount() {
-     fetch(`/About`)
-       .then(res => res.json())
-       .then(json => this.setState({ data: json }));
-   }
+  constructor(props){
+     super(props);
+  }
   render() {
-   const Cards = this.state.data.map((jsonpart) =>(
+
+   const Cards = this.props.data.map((jsonpart) =>(
         <Card item={jsonpart} />));
    return (
           <div class=" cards container  text-center mt-5">
@@ -35,14 +29,26 @@ class Cards extends React.Component {
 
 
 class AboutUs extends React.Component {
-  render() {
-    return (
-        < >
-          <Header/>
-          <Cards/>
-          <Footer/>
+  constructor() {
+     super();
+     this.state = { data: [] };
+   }
 
-       < />
+   componentDidMount() {
+     fetch(`/About`)
+       .then(res => res.json())
+       .then(json => this.setState({ data: json }));
+   }
+  render() {
+    if (this.state.data.length===0)
+       return ("opppp about.js")
+    return (
+        <div>
+          <Header data={this.state.data.header}/>
+          <Cards data={this.state.data.content}/>
+          <Footer data={this.state.data.Footer}/>
+
+       < /div>
 
     );
   }

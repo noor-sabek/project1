@@ -1,13 +1,10 @@
 
 const express = require('express');
 const router = express.Router();
-const myjson=require('./aboutUs.json');
+const aboutUsJson=require("./aboutUsDB")
 
 
+router.get('/About',aboutUsJson.aboutUsPage)
 
-router.get('/',function(req, res){
-res.json(myjson)
 
-})
-
-module.exports=router;
+module.exports = router

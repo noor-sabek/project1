@@ -7,6 +7,9 @@ import LogoPic from './../../general/logo/logo.js';
 import './navBar.css' ;
 
 class NavBar extends React.Component {
+  constructor(props) {
+    super(props);
+  }
   render() {
    return (
 
@@ -19,7 +22,7 @@ class NavBar extends React.Component {
               </button>
 
             <div className="collapse navbar-collapse" id="collapsibleNavbar">
-              <ListItems/>
+              <ListItems data={this.props.data}/>
             </div>
 
              <Search/>

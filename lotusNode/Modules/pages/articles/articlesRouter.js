@@ -12,7 +12,8 @@ const {getAllArticles,
 
 router.get('/', getAllArticles);
 
-router.post('/',craeteArticle);
+//post
+router.get('/craeteArticle',craeteArticle);
 
 // router.patch('/:articleId',updateArticle);
 router.get('/:articleId',updateArticle);

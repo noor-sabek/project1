@@ -1,20 +1,39 @@
+const express = require('express')
+const router = express.Router();
+const header = require('../../parts/header/headerController.js');
 
-const homeCarousel=require('./jsonforHome/homecarousel.json');
-const navBarItems=require('./jsonforHome/navItems.json');
-const catNavData=require('./jsonforHome/CatNavData.json');
+const  catNavData= require('./jsonforHome/CatNavData.json');
+const  homeCarouselJson= require('./jsonforHome/homecarousel.json');
+const  feedbackCards= require('./jsonforHome/feedbackCards.json');
 
-module.exports=
-{
-carousel:(req , res)=>{
-res.status(200).json(homeCarousel)
-},
+let Carousel =()=> {
+  return(homeCarouselJson)
+}
 
-navbar:(req , res)=>{
-res.status(200).json(navBarItems)
 
-},
+let CatNavData =()=> {
+  return(catNavData)
+}
 
-catNavData:(req, res)=>{
-res.status(200).json(catNavData)}
+let Feedback =()=> {
+  return(feedbackCards)
+}
 
+
+//add content json
+let HomeContent=()=>{
+  return JSON.parse('{ "homeCarouselJson":'+JSON.stringify(Carousel())
+  +',"CatNavData":'+ JSON.stringify(CatNavData())+',"feedbackCards":'+JSON.stringify(Feedback())+'}')
+
+}
+//add all json for home
+let HomepageJson=()=>{
+  console.log("homepagejson in controller")
+  return JSON.parse('{ "Content" :' +JSON.stringify(HomeContent())+',"header" :'+ JSON.stringify(header.Header())+'}')
+
+}
+
+module.exports.homepage = (req, res)=>{
+  console.log("homepage")
+  res.json(HomepageJson())
 }

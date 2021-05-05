@@ -6,10 +6,13 @@ import Navbar from './navBar.js';
 
 
 class Header extends React.Component {
+  constructor(props) {
+    super(props);
+  }
   render() {
     return (
-    <Navbar/>
-    );
+         <Navbar data={this.props.data}/>
+      );
   }
 }
 export default Header;

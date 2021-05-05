@@ -1,4 +1,89 @@
-[
+{"navjson":
+  [
+        {
+            "title": "Home",
+            "url":"/",
+             "level":"1",
+             "icon":"fa fa-home icon"
+
+
+      },
+      {
+          "title": "Articles",
+          "url":"Articles",
+          "level":"2",
+           "icon":"fa fa-book icon",
+           "dropdown":{}
+
+
+    },
+    {
+        "title": " Contact Us",
+        "url":"Contact-Us",
+         "level":"1",
+         "icon":"fa fa-comments-o icon"
+
+   },
+    {
+        "title": "My Passion",
+        "url":"My-Passion",
+         "level":"1",
+         "icon":"fa fa-lightbulb-o icon"
+
+  },
+  {
+      "title": "About Us",
+      "url":"About-Us",
+       "level":"1",
+       "icon":" fa fa-info-circle icon"
+
+  },
+  {
+      "title": "Sign Up",
+      "url":"Sign-up",
+       "level":"1",
+       "icon":"fa fa-user-circle icon"
+
+}
+],
+
+"homeCarouselJson":[
+  {
+  "img":"/img/carouselImgs/mon6.jpg",
+  "caption":" Safe Wooden Toys"
+},
+{
+  "img":"/img/carouselImgs/mon3.jpg",
+  "caption":"Montessori In Daily Life"
+},
+{
+  "img":"/img/carouselImgs/mon4.jpg",
+  "caption":"Math Toys  In Montessori "
+
+},
+{
+  "img":"/img/carouselImgs/mon5.jpg",
+  "caption":"  Biology In Montessori "
+
+},
+{
+  "img":"/img/carouselImgs/mon2.jpg",
+  "caption":"Lacing Activity, which encourages precision and patience "
+
+},
+{
+  "img":"/img/carouselImgs/mon1.jpg",
+  "caption":" Montessori Strengthens the Sensory System "
+
+},
+{
+  "img":"/img/carouselImgs/mon7.jpg",
+  "caption":"Toys which Advances Fine Motor Skills  "
+
+}
+],
+
+"catNavData":[
       {
           "title": "0 - 3",
           "url":"#mn0t3",
@@ -63,4 +148,32 @@
    "information":"Includes: The Peg Board, which develops spatial reasoning and math skills. The Fabric Winder, which builds wrist strength and function. The Fraction Circles, which provide concrete experience with mathematical concepts. The Gluing Set, which teaches the basic skills your child needs to express themselves creatively. Three Mystery Bags, each with a specific theme, which build memory skills and encourage tactile exploration. Guides for parents including short videos and articles on how to introduce and use the materials with your baby.",
     "picture":"/img/levelspic/level8pic.jpg"
 
-}]
+}
+],
+
+"feedbackCards":[
+      {
+          "cardTitle": "",
+          "cardImgtop":"/img/parent-say/parents-say1.jpg",
+          "cardText":"It is great to have the research and understanding as to why each toy is introduced and what skills it is helping her to gain. The toys are beautiful and very sturdy.— Amnda M.",
+          "pathButton":"#",
+          "buttonTitle":"like"
+    },
+    {
+        "cardTitle": "",
+        "cardImgtop":"/img/parent-say/parents-say2.jpeg",
+        "cardText":"We love the Monti Kids program! I have enjoyed seeing my daughter engage with the toys, investigating and trying new things until she figures out how it works.— Zahra G.",
+        "pathButton":"#",
+        "buttonTitle":"like"
+  },
+  {
+      "cardTitle": "",
+      "cardImgtop":"/img/parent-say/parents-say3.jpeg",
+      "cardText":"It's just really clear that the system is intentional and designed for babies exactly where they're at. I'm a convert. — Jana M.",
+      "pathButton":"#",
+      "buttonTitle":"like"
+  }
+]
+
+
+}

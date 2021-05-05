@@ -6,9 +6,11 @@ import './feedback.css';
 
 
 class FeedbackCards extends React.Component {
-
+  constructor(props) {
+     super(props);
+   }
   render() {
-   const Cards = ParentSharing.map((jsonpart) =>(
+   const Cards = this.props.data.map((jsonpart) =>(
         <Card item={jsonpart} />));
    return (
           <div class=" cards container  text-center mt-5">

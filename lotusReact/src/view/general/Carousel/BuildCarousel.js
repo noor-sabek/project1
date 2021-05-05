@@ -1,22 +1,14 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
-// import CarouselItems from './CarouselItems.js';
 import { Carousel } from 'react-responsive-carousel';
 
 
 class BuildCarousel extends React.Component  {
-  constructor() {
-     super();
-     this.state = { data: [] };
-   }
-
-   componentDidMount() {
-     fetch(`./carousel`)
-       .then(res => res.json())
-       .then(json => this.setState({ data: json }));
-   }
+  constructor(props) {
+     super(props);
+  }
     render() {
-      const BuildCarousel = this.state.data.map((jsonpart) =>(
+      const BuildCarousel = this.props.data.map((jsonpart) =>(
           <CarouselItem item={jsonpart} />));
         return (
                 <Carousel>

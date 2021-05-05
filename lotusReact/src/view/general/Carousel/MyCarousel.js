@@ -8,9 +8,12 @@ import './MyCarousel.css';
 
 
 class DemoCarousel extends  Component {
+  constructor(props) {
+    super(props);
+  }
     render() {
     return (
-               <BuildCarousel/>
+               <BuildCarousel data={this.props.data}/>
         );
     }
 }

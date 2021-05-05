@@ -9,12 +9,15 @@ import './homeContent.css';
 
 
 class HomeContent extends React.Component {
+  constructor(props) {
+    super(props);
+  }
   render() {
     return (
       <div>
-        <MyCarousel/>
-        <NavTabs/>
-        <FeedbackCards/>
+        <MyCarousel data={this.props.data.homeCarouselJson}/>
+        <NavTabs data={this.props.data.CatNavData}/>
+        <FeedbackCards data={this.props.data.feedbackCards}/>
       </div>
     );
   }
