@@ -1,5 +1,6 @@
 const express = require('express');
 const headerJson=require('../../parts/header/headerController');
+const footerJson = require('../../parts/footer/footerController.js');
 const users=require('./users');
 
 
@@ -37,7 +38,7 @@ let AddUser =()=> {
     const Json={
       "header":headerJson.Header(),
       "content":UserContent(),
-      "footer":"footer"
+      "footer":footerJson.Footer()
     }
     return Json
   }
