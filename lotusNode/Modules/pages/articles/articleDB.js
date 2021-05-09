@@ -1,5 +1,6 @@
 const express = require('express')
 const headerJson=require('../../parts/header/headerController');
+const footerJson = require('../../parts/footer/footerController.js');
 
 let getAllArticles=()=>{
   return  (
@@ -35,7 +36,7 @@ let craeteArticle =()=> {
     const artJson={
       "header":headerJson.Header(),
       "content":ArticlesContent(),
-      "footer":"footer"
+      "footer":footerJson.Footer()
     }
     return artJson
   }
