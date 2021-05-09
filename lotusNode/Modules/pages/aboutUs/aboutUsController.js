@@ -4,7 +4,13 @@ const router = express.Router();
 const aboutUsJson=require("./aboutUsDB")
 
 
-router.get('/About',aboutUsJson.aboutUsPage)
+
+//  ומחזירה אותו בקונטרוליר DBמקבלת מידע (גסון)מקובץ
+let aboutUsPage = ()=>
+{
+   console.log("aboutUsPage")
+  return (aboutUsJson.aboutUsPageJson)
+}
 
 
-module.exports = router
+ module.exports= (req,res) => {res.json(aboutUsPage())}

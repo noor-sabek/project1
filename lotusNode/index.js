@@ -6,12 +6,12 @@ const port = 8000;
 const About = require('./Modules/pages/aboutUs/aboutUsController.js');//path to folder
 const Contact = require('./Modules/pages/contactUs/contactUs.js');//path to folder
 const Signup = require('./Modules/pages/signUp/signUpController.js');//path to folder
-const Articles = require('./Modules/pages/articles/articlesRouter.js');
+const Articles = require('./Modules/pages/articles/articlesController.js');
 const User = require('./Modules/general/user/controllerUser.js');
 const Home =require('./Modules/pages/home/homeController.js');
 
 
-app.get('/home',Home.homepage)
+app.get('/home',Home)
 
 app.use('/Articles',Articles)
 

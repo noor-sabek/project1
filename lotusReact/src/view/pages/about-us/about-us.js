@@ -46,7 +46,7 @@ class AboutUs extends React.Component {
         <div>
           <Header data={this.state.data.header}/>
           <Cards data={this.state.data.content}/>
-          <Footer data={this.state.data.Footer}/>
+          <Footer  data={this.state.data.Footer}/>
 
        < /div>
 

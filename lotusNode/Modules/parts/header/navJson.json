@@ -12,8 +12,22 @@
           "url":"Articles",
           "level":"2",
            "icon":"fa fa-book icon",
-           "dropdown":{}
+           "Dropdown":[
 
+                 {
+                    "title":"About children",
+                    "path":"#"
+                  },
+                  {
+                      "title":"About parent",
+                      "path":"#"
+
+                  },
+                  {
+                      "title":"Healthy food for children",
+                      "path":"#"
+
+                  }]
 
     },
     {
@@ -44,4 +58,5 @@
        "icon":"fa fa-user-circle icon"
 
 }
+
 ]

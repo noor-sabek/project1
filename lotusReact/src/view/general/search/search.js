@@ -8,9 +8,11 @@ class Search extends React.Component {
   render() {
     return(
            <div className="float-right">
-            <form className=" search form-inline col-4 justify-content-right" action="/action_page.php">
-                <input className="form-control fa " type="text" placeholder="&#xf002;"></input>
+            <form className=" search form-inline justify-content-right" action="/action_page.php">
+              <span> <i class="fa fa-search icon"></i></span>
+                  <a className="ml-3" href="Sign-up"><i class="fa fa-user-o icon " > </i></a>
             </form>
+
            </div>
          );
       }

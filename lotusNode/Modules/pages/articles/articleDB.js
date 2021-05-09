@@ -1,0 +1,42 @@
+const express = require('express')
+const headerJson=require('../../parts/header/headerController');
+
+let getAllArticles=()=>{
+  return  (
+    {  "message":'get all articles'}
+  )
+}
+
+let craeteArticle =()=> {
+    return (
+    { "message":'create a new article'}
+   )
+ }
+
+ //id for article to know witch one we want to update    // const articleId = req.params.articleId /- ${articleId}`;
+ let updateArticle =(req) =>{
+    return (
+      { "message": "update article" })
+  }
+
+  let deleteArticle =(req)=>{
+        return ( {"message": "delete article"})
+      }
+
+
+  let ArticlesContent=()=>{
+    console.log("article db");
+    return JSON.parse('{ "getAllArticles":'+JSON.stringify(getAllArticles())
+    +',"craeteArticle":'+ JSON.stringify(craeteArticle())+',"updateArticle":'+JSON.stringify(updateArticle())+',"deleteArticle":'+JSON.stringify(deleteArticle())+'}')
+
+  }
+  let ArticlePage=()=>{
+    console.log("article header")
+    const artJson={
+      "header":headerJson.Header(),
+      "content":ArticlesContent(),
+      "footer":"footer"
+    }
+    return artJson
+  }
+module.exports.ArticlesResponse = ArticlePage();

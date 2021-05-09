@@ -3,21 +3,21 @@ import ReactDOM from 'react-dom';
 
 
 
- const DropdownItems=[
+ const Dropdown=[
   {
-    "pageName":"About children",
-    "path":"#",
+    "title":"About children",
+    "path":"#"
   },
   {
-      "pageName":"About parent",
-      "path":"#",
+      "title":"About parent",
+      "path":"#"
 
   },
   {
-      "pageName":"Healthy food for children",
-      "path":"#",
+      "title":"Healthy food for children",
+      "path":"#"
 
   }
   ];
 
-export default DropdownItems;
+export default Dropdown;

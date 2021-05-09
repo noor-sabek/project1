@@ -1,10 +1,14 @@
 const express = require('express')
-const router = express.Router();
-const concat=require('async/concat');
-const navjson = require('./navJson.json');
+const headerDB = require('./headerDB.js');
 
 
- module.exports.Header = (req , res) => {
-   console.log("headerControllers")
-    return (navjson)
+
+ //  ומחזירה אותו בקונטרוליר DBמקבלת מידע (גסון)מקובץ
+ let headerItems = ()=>
+ {
+   console.log("footerPage")
+ return (headerDB.Header)
  }
+
+
+  module.exports.Header= (req,res) => headerItems()

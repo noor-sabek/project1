@@ -1,11 +1,11 @@
 
 const express = require('express');
-const router = express.Router();
+const users = require('./signUpDB');
 
 
+let signup=()=>{
+  console.log("signup controller")
+   return(users.signup)
+}
 
-router.get('/',function(req, res){
-res.send('signup')
-})
-
-module.exports=router;
+ module.exports= (req,res) => {res.json(signup())}

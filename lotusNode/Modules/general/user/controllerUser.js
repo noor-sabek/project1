@@ -1,9 +1,13 @@
 
 const express = require('express');
-const router = express.Router();
-const json = require('./userDB');
+const adminResponse = require('./userDB');
 
 
-router.get('/',json.userPage)
+//  ומחזירה אותו בקונטרוליר DBמקבלת מידע (גסון)מקובץ
+let userPage = ()=>
+{
+  console.log("userPage")
+return (adminResponse.AdminResponse)
+}
 
-module.exports = router;
+ module.exports= (req,res) => {res.json(userPage())}

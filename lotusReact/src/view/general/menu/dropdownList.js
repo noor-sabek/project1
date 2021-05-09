@@ -1,19 +1,41 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import DropdownItems from './dropdownItems';
-import ListItem from './listItem.js';
-
+import Dropdownitems from './dropdownItems';
 
 
 class DropdownList extends React.Component {
+      constructor(props){
+      super(props);
 
+  }
   render() {
-    const DropdownList = DropdownItems.map((jsonpart) =>(
-        <ListItem dropdownitem={jsonpart} />));
+
+    const Dropdown = this.props.item.map((jsonpart)=>(
+        <DropdownItems dropdownitem={jsonpart} />));
   return (
-           <a>{DropdownList}</a>
+           <div className="dropdown-menu">{Dropdown} </div>
       );
   }
 }
 
-export default DropdownList;
+
+
+class DropdownItems extends React.Component{
+  constructor(props){
+  super(props);
+
+  }
+  render() {
+    if (this.props.dropdownitem.length===0)
+       return ("opppp home.js")
+
+
+      return(
+      <a class="dropdown-item" href={this.props.dropdownitem.path}>{this.props.dropdownitem.title}</a>
+      );
+
+  }
+
+}
+
+ export default DropdownList;

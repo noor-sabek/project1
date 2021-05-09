@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import MenuItems from './menuItems.js';
-
+import DropdownList from './dropdownList.js';
 
 class ListItem extends React.Component {
   constructor(props){
@@ -9,6 +9,7 @@ class ListItem extends React.Component {
   }
 
   render() {
+
    return (
 
   (this.props.item.level == 1 )?
@@ -26,15 +27,17 @@ class ListItem extends React.Component {
             <a className="nav-link dropdown-toggle" id="navbardrop" data-toggle="dropdown" href={this.props.item.url}>
                  <i className={this.props.item.icon}></i> {this.props.item.title}
             </a>
-            <div className="dropdown-menu">
-              <a className="dropdown-item" href="#">About children</a>
-              <a className="dropdown-item" href="#">About parent</a>
-              <a className="dropdown-item" href="#">Healthy food for children</a>
-            </div>
+
+
+            <DropdownList item = {this.props.item.Dropdown}/>
+
+
         </li>
       )
 
     );
+
+
 
   }
 }
