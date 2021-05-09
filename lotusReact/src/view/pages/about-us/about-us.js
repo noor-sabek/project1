@@ -1,4 +1,4 @@
-import React from 'react';
+ import React from 'react';
 import ReactDOM from 'react-dom';
 import Carousel from 'react-bootstrap/Carousel';
 import Header from '../../parts/header/header.js';

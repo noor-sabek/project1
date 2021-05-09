@@ -1,9 +1,8 @@
 const express = require('express')
+const router = express.Router();
 
-
-
-let  iconsf = require('./jsonforFooter/FooterIcons.json');
-let  links= require('./jsonforFooter/Footerlinks.json');
+let  iconsf = require('./jsonForFooter/FooterIcons.json');
+let  links= require('./jsonForFooter/Footerlinks.json');
 
 
 let Icons =()=> {
@@ -17,11 +16,17 @@ let Links =()=> {
 
 
 //add content json
-let FooterContent=()=>{
-  console.log("footer")
-  return JSON.parse('{ "FooterIcons":'+JSON.stringify(Icons())
-  +',"Footerlinks":'+ JSON.stringify(Links()) +'}')
+// let FooterContent=()=>{
+//   console.log("footer")
+//   return JSON.parse('{ "FooterIcons":'+JSON.stringify(Icons())
+//   +',"Footerlinks":'+ JSON.stringify(Links()) +'}')
+//
+// }
+
+let FooterContent ={
+
+  "FooterIcons":Icons(),
+  "Footerlinks":Links()
 
 }
-
-module.exports.footer = FooterContent();
+module.exports.footerDB = FooterContent;

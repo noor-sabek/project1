@@ -1,14 +1,14 @@
 
 const express = require('express');
 const router = express.Router();
-const aboutUsJson=require("./aboutUsDB")
+const aboutUsJson=require('./aboutUsDB')
 
 
 
 //  ומחזירה אותו בקונטרוליר DBמקבלת מידע (גסון)מקובץ
 let aboutUsPage = ()=>
 {
-   console.log("aboutUsPage")
+   console.log(aboutUsJson.aboutUsPageJson)
   return (aboutUsJson.aboutUsPageJson)
 }
 
