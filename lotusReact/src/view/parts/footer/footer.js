@@ -48,7 +48,7 @@ class FooterPage extends React.Component {
       <div className="footer-copyright text-right py-3">
         <MDBContainer fluid>
 
-           <button type="button" class="btn btn-dark"><i class="fa fa-caret-square-o-up icon Topicon btn-lg" aria-hidden="true" href="#"></i></button>
+           <button type="button" target="-top" href="#" class="btn btn-dark"><i class="fa fa-caret-square-o-up icon Topicon btn-lg" aria-hidden="true"  ></i></button>
         </MDBContainer>
       </div>
   </MDBFooter>
