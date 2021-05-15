@@ -8,6 +8,14 @@
 
       },
       {
+        "title":"Quiz",
+        "url":"QuizApp",
+         "level":"1",
+         "icon":"fa fa-gamepad icon"
+
+
+     },
+      {
           "title": "Articles",
           "url":"Articles",
           "level":"2",

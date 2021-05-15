@@ -1,11 +1,11 @@
 
-const globale=
-
 {
 
-    "KEYS": {
-        "API": "",
-        "SECRET": ""
+      "createConnection": {
+        "host": "localhost:8000",
+        "user": "root",
+        "password": "yourpassword",
+         "database": "mydb"
     },
 
     "INVESTMENT": {

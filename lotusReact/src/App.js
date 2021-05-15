@@ -4,6 +4,7 @@ import {BrowserRouter, Route, Switch} from 'react-router-dom';
 import './App.css';
 
 import Home from './view/pages/home/home.js';
+import QuizApp from './view/pages/quizApp/quizApp.js';
 import MyPassion from './view/pages/My-Passion/MyPassion.js';
 import ContactUs from './view/pages/Contact-us/contact-us.js';
 import SignUp from './view/pages/Sign-up/Sign-up.js';
@@ -17,6 +18,7 @@ class App extends React.Component {
         <main className="App" >
             <Switch>
                 <Route path="/" component={Home} exact />
+                <Route path="/QuizApp" component={QuizApp}  />
                 <Route path="/Sign-up" component={SignUp}  />
                 <Route path="/My-Passion" component={MyPassion}  />
                 <Route path="/Contact-Us" component={ContactUs}  />
