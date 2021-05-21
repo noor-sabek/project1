@@ -31,15 +31,11 @@ let AddUser =()=> {
     console.log("User db");
     return JSON.parse('{ "getAllUser":'+JSON.stringify(GetAllUser())
     +',"AddUser":'+ JSON.stringify(AddUser())+',"EditUser":'+JSON.stringify(EditUser())+',"deleteUser":'+JSON.stringify(DeleteUser())+'}')
+}
+    let LoginJson=()=>{
+      console.log(" contact json in db")
+      return JSON.parse('{ "header" :'+ JSON.stringify(headerJson.Header())+',"Content" :' +JSON.stringify(UserContent())+',"Footer":'+JSON.stringify(footerJson.Footer()) +'}')
 
   }
-  let UserPage=()=>{
-    console.log("User header")
-    const Json={
-      "header":headerJson.Header(),
-      "content":UserContent(),
-      "footer":footerJson.Footer()
-    }
-    return Json
-  }
-module.exports.AdminResponse=UserPage();
+
+module.exports.AdminResponse = LoginJson();

@@ -9,7 +9,7 @@ class FooterIcons extends React.Component {
   }
 
     render() {
-      const Icons = this.props.item.FooterIcons.map((jsonpart) =>(
+      let Icons = this.props.item.FooterIcons.map((jsonpart) =>(
           <Icon item={jsonpart} />));
     return (
             <p className="text-center ml-3">{Icons}</p>

@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 import './form.css';
 
 
-class Form extends React.Component {
+class LogInForm extends React.Component {
 
   render() {
     return (
@@ -22,6 +22,7 @@ class Form extends React.Component {
                         <div className="valid-feedback">Valid.</div>
                         <div className="invalid-feedback">Please fill out this field.</div>
                   </div>
+
       						<p className="et_pb_forgot_password"><a href="#">Forgot your password?</a></p>
       						 <p>
       						   <button className="btn btn-success" type="submit">Login</button>
@@ -29,9 +30,9 @@ class Form extends React.Component {
       					</form>
 
       				</div>
-              
+
 
     );
   }
 }
-export default Form;
+export default LogInForm;

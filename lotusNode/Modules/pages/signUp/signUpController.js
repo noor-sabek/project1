@@ -1,11 +1,11 @@
 
 const express = require('express');
-const users = require('./signUpDB');
+const FORM = require('./signUpDB');
 
 
 let signup=()=>{
   console.log("signup controller")
-   return(users.signup)
+   return(FORM.signup)
 }
 
  module.exports= (req,res) => {res.json(signup())}

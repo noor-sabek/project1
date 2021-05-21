@@ -1,12 +1,16 @@
 
 const express = require('express');
 const router = express.Router();
- 
 const headerJson=require('../../parts/header/headerController');
 const footerJson = require('../../parts/footer/footerController.js');
+const GeneralDb = require('../../general/DB/GeneralDb');
+
 
 let passion = () => {
-return({"passion": "content"})
+//   let DBquery = " ";
+//   let DBresult = GeneralDb.dbTreatment(DBquery);
+  // return(DBresult)
+  return({"hi":"7"})
 }
 
  //add  json

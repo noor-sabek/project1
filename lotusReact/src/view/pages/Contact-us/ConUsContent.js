@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-// import ConUsForm from './ConUsForm.js';
+
 
 
 class ConUsForm extends React.Component {
@@ -13,9 +13,9 @@ class ConUsForm extends React.Component {
     const Formlist = this.props.data.map((jsonpart) =>(
         <ConUsItem item={jsonpart} />));
   return (
-            <>
+            <div>
                {Formlist}
-            </>
+            <div/>
 
       );
   }

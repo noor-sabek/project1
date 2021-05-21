@@ -2,7 +2,7 @@ const express = require('express');
 const router = express.Router();
 const headerJson=require('../../parts/header/headerController');
 const footerJson = require('../../parts/footer/footerController.js');
-
+const GeneralDb = require('../../general/DB/GeneralDb');
 
 
 const  catNavData= require('./jsonforHome/CatNavData.json');
@@ -27,11 +27,13 @@ let Feedback =()=> {
 let HomeContent=()=>{
   return JSON.parse('{ "homeCarouselJson":'+JSON.stringify(Carousel())
   +',"CatNavData":'+ JSON.stringify(CatNavData())+',"feedbackCards":'+JSON.stringify(Feedback())+'}')
-
+  // let DBquery = " ";
+  // let DBresult = GeneralDb.dbTreatment(DBquery);
+  // return(DBresult)
 }
 //add all json for home
 let HomepageJson=()=>{
-  console.log("homepagejson in controller")
+  console.log("homepagejson in db")
   return JSON.parse('{ "header" :'+ JSON.stringify(headerJson.Header())+',"Content" :' +JSON.stringify(HomeContent())+',"Footer":'+JSON.stringify(footerJson.Footer()) +'}')
 
 }

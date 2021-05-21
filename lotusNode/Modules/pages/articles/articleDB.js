@@ -1,6 +1,7 @@
 const express = require('express')
 const headerJson=require('../../parts/header/headerController');
 const footerJson = require('../../parts/footer/footerController.js');
+const GeneralDb = require('../../general/DB/GeneralDb')
 
 let getAllArticles=()=>{
   return  (
@@ -29,7 +30,9 @@ let craeteArticle =()=> {
     console.log("article db");
     return JSON.parse('{ "getAllArticles":'+JSON.stringify(getAllArticles())
     +',"craeteArticle":'+ JSON.stringify(craeteArticle())+',"updateArticle":'+JSON.stringify(updateArticle())+',"deleteArticle":'+JSON.stringify(deleteArticle())+'}')
-
+    // let DBquery = " ";
+    // let DBresult = GeneralDb.dbTreatment(DBquery);
+    // return(DBresult)
   }
   let ArticlePage=()=>{
     console.log("article header")

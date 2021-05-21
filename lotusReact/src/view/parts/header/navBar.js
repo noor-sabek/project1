@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 
 import ListItems from './../../general/menu/listItems.js';
-import Search from './../../general/search/search.js';
+import RightNav from './RightNavbar/RightNav.js';
 import LogoPic from './../../general/logo/logo.js';
 import './navBar.css' ;
 
@@ -25,7 +25,7 @@ class NavBar extends React.Component {
               <ListItems data={this.props.data}/>
             </div>
 
-             <Search/>
+             <RightNav/>
 
        </nav>
 

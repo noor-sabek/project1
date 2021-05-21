@@ -1,13 +1,13 @@
 
 const express = require('express');
-const adminResponse = require('./userDB');
+const user = require('./userDB');
 
 
 //  ומחזירה אותו בקונטרוליר DBמקבלת מידע (גסון)מקובץ
 let userPage = ()=>
 {
   console.log("userPage")
-return (adminResponse.AdminResponse)
+return (user.AdminResponse)
 }
 
- module.exports= (req,res) => {res.json(userPage())}
+ module.exports= (req,res) => res.json(userPage())

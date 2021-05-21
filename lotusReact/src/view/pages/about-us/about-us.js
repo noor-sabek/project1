@@ -22,6 +22,7 @@ class Cards extends React.Component {
                   <div class="card-deck py-5 ">
                              {Cards}
                   </div>
+                  <div> “ The goal of early childhood should be to activate the child’s own natural desire to learn.” </div>
             </div>
       );
   }
