@@ -9,11 +9,12 @@ class Subscribe extends React.Component{
     render(){
 
         return(
-        <form class=" form-control subscribe" novalidate="novalidate" action="#" method="post" id="newsletter-validate-detail">
-          <label class=" label mr-5 text-danger " for="newsletter"><span>Sign Up:</span></label>
-          <input  name="email" type="email" id="newsletter" placeholder="Enter your email address" data-validate="{required:true, 'validate-email':true}"></input>
-          <button type="submit" class="btn btn-default text-danger float-right">Submit</button>
-        </form>);
+        <form className=" form-control subscribe" novalidate="novalidate" action="#" method="post" id="subscribe">
+          <label className="  mr-5 text-danger " for="subscribe"><span>subscribe</span></label>
+          <input  name="email" type="email" id="subscribe" placeholder="Enter your email address" required></input>
+          <button type="submit" className="btn btn-default text-danger float-right">Submit</button>
+        </form>
+      );
       }
     }
 export default Subscribe;

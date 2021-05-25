@@ -1,0 +1,31 @@
+[
+  {
+    "inputID":"Father",
+     "name":"Frole",
+     "value" :"Father",
+     "inputType":"radio",
+     "labelFor":"Father"
+  },
+  {
+    "inputID":"Mather",
+     "name":"Mrole",
+     "value" :"Mather",
+      "inputType":"radio",
+     "labelFor":"Mather"
+  },
+  {
+    "inputID":"Teacher",
+     "name":"Trole",
+     "value" :"Teacher",
+      "inputType":"radio",
+     "labelFor":"Teacher"
+  },
+  {
+    "inputID":"Other",
+     "name":"Orole",
+     "value" :"Other",
+      "inputType":"radio",
+     "labelFor":"Other"
+  }
+
+]

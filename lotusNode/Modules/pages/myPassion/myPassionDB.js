@@ -16,7 +16,7 @@ let passion = () => {
  //add  json
  let passionJson=()=>{
    console.log(" passion Json  in db")
-   return JSON.parse('{ "header" :'+ JSON.stringify(headerJson.Header())+',"Content" :' +JSON.stringify(passion())+',"Footer":'+JSON.stringify(footerJson.Footer()) +'}')
+   return JSON.parse('{ "headerItems" :'+ JSON.stringify(headerJson.headerItems())+',"Content" :' +JSON.stringify(passion())+',"footerItems":'+JSON.stringify(footerJson.footerItems()) +'}')
 
  }
 

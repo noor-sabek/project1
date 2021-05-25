@@ -23,12 +23,13 @@ class QuizApp extends React.Component {
 
     if (this.state.data.length===0)
        return ("opppps quiz ")
-
+  console.log(this.state.data.headerItems)
     return (
+
         <div>
-          <Header data={this.state.data.header}/>
-          < Quizque data={this.state.data.Content}/>
-          <Footer data={this.state.data.Footer}/>
+          <Header data={this.state.data.headerItems}/>
+          <Quizque data={this.state.data.Content}/>
+          <Footer data={this.state.data.footerItems}/>
 
        < /div>
 

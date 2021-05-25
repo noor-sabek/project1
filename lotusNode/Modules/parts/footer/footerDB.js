@@ -1,32 +1,22 @@
 const express = require('express')
 const router = express.Router();
+const GeneralDb = require('../../general/DB/GeneralDb');
 
 let  iconsf = require('./jsonForFooter/FooterIcons.json');
 let  links= require('./jsonForFooter/Footerlinks.json');
 
 
-let Icons =()=> {
-  return(iconsf)
+let FooterIcons = async () => {
+  return await GeneralDb.query("SELECT * FROM  footeritems WHERE part = 1")
+  // return(iconsf)
 }
 
 
-let Links =()=> {
-  return(links)
+let Footerlinks = async() => {
+    return await GeneralDb.query("SELECT * FROM  footeritems WHERE part = 2")
 }
 
 
-//add content json
-// let FooterContent=()=>{
-//   console.log("footer")
-//   return JSON.parse('{ "FooterIcons":'+JSON.stringify(Icons())
-//   +',"Footerlinks":'+ JSON.stringify(Links()) +'}')
-//
-// }
-
-let FooterContent ={
-
-  "FooterIcons":Icons(),
-  "Footerlinks":Links()
-
+module.exports.footerDB =async ()=>{
+  return JSON.parse('{ "FooterIcons" :'+ JSON.stringify( await FooterIcons())+',"Footerlinks" :' +JSON.stringify( await Footerlinks())+'}')
 }
-module.exports.footerDB = FooterContent;

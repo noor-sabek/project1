@@ -2,14 +2,9 @@ const express = require('express')
 const Json = require('./homeDB.js')
 
 
-
-
 //  ומחזירה אותו בקונטרוליר DBמקבלת מידע (גסון)מקובץ
-let homePage = ()=>
+ module.exports.homePage = async (req,res)=>
 {
-  console.log("homePage")
-return (Json.homepageJ)
+  console.log( "home controller")
+  res.json(await Json.homepageJ())
 }
-
-
- module.exports= (req,res) => {res.json(homePage())}

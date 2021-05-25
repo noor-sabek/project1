@@ -9,6 +9,7 @@ class DropdownList extends React.Component {
 
   }
   render() {
+    console.log(this.props.item)
 
     const Dropdown = this.props.item.map((jsonpart)=>(
         <DropdownItems dropdownitem={jsonpart} />));

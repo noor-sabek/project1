@@ -4,11 +4,8 @@ const headerDB = require('./headerDB.js');
 
 
  //  ומחזירה אותו בקונטרוליר DBמקבלת מידע (גסון)מקובץ
- let headerItems = ()=>
+  module.exports.headerItems =async (req,res)=>
  {
-   console.log("footerPage")
- return (headerDB.Header)
+   console.log(" header controller")
+     return await headerDB.Header()
  }
-
-
-  module.exports.Header= (req,res) => headerItems()

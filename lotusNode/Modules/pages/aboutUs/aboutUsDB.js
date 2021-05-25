@@ -8,18 +8,16 @@ const GeneralDb = require('../../general/DB/GeneralDb');
 
 
 
-let AboutUsContentJson =()=>{
-  // let DBquery = " ";
-  // let DBresult = GeneralDb.dbTreatment(DBquery);
-  return(aboutUsJson)
-}
+let AboutUsContentJson = async() => {
+    return await GeneralDb.query("SELECT * FROM `cardsitems` WHERE `card-for`='about-us-page'")
+  }
 
-let AboutUsPageJson ={
 
-  "header":headerJson.Header(),
-  "content":AboutUsContentJson(),
-  "Footer":footerJson.Footer()
 
-}
-
- module.exports.aboutUsPageJson = AboutUsPageJson;
+ module.exports.aboutUsPageJson = async()=>{
+return({
+   "headerItems": await headerJson.headerItems(),
+   "content": await AboutUsContentJson(),
+   "footerItems": await footerJson.footerItems()
+ });
+ }

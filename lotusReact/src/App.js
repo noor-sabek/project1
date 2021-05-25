@@ -10,7 +10,7 @@ import ContactUs from './view/pages/Contact-us/contact-us.js';
 import SignUp from './view/pages/Sign-up/Sign-up.js';
 import AboutUs from './view/pages/about-us/about-us.js';
 import UserLogin from './view/pages/Account/UserPro.js';
-import Error from './view/pages/Error/error.js';
+// import Error from './view/pages/Error/error.js';
 
 
 class App extends React.Component {

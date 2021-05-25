@@ -37,9 +37,9 @@ let craeteArticle =()=> {
   let ArticlePage=()=>{
     console.log("article header")
     const artJson={
-      "header":headerJson.Header(),
+      "headerItems":headerJson.headerItems(),
       "content":ArticlesContent(),
-      "footer":footerJson.Footer()
+      "footerItems":footerJson.footerItems()
     }
     return artJson
   }

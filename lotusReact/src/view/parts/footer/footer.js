@@ -19,10 +19,8 @@ class FooterPage extends React.Component {
         <MDBRow className="text-center ">
 
           <MDBCol md="4">
-            <h5 className="footer-heading ">  <LogoPic/>  </h5><br/>
 
-              <p className="text-center note">  Let's Keep in Touch  </p>
-              <p className="text-center note"> Give us a call :<a href="#">05028387377</a></p>
+               <LogoPic/>
 
               <FooterIcons item={this.props.data}/>
 
@@ -30,7 +28,6 @@ class FooterPage extends React.Component {
 
         <MDBCol md="4">
 
-            <h5 className="footer-heading  "> Quick Links</h5>
             <BuildList item={this.props.data}/>
 
         </MDBCol>
@@ -39,16 +36,19 @@ class FooterPage extends React.Component {
 
         <MDBCol md="4">
 
-            <h5 className="footer-heading text-center"> Subscribe </h5>
-            <Subscribe />
+                 <p className="text-center note">  Let's Keep in Touch
+                   <br></br>Give us a call :<a href="#">05028387377</a>
+                  </p>
+                    <Subscribe />
+
 
         </MDBCol>
         </MDBRow>
       </MDBContainer>
-      <div className="footer-copyright text-right py-3">
+           <div className="footer-copyright text-right py-3">
         <MDBContainer fluid>
 
-           <button type="button" target="-top" href="#" class="btn btn-dark"><i class="fa fa-caret-square-o-up icon Topicon btn-lg" aria-hidden="true"  ></i></button>
+           <button type="button"  href="#" class="btn btn-dark"><i class="fa fa-caret-square-o-up icon Topicon btn-lg" aria-hidden="true" href="#" ></i></button>
         </MDBContainer>
       </div>
   </MDBFooter>

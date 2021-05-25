@@ -1,0 +1,31 @@
+
+    [
+          {
+              "title": " 0-6M",
+              "inputID":"1",
+              "value":" 0-6",
+              "inputType":"checkbox"
+
+        },
+        {
+            "title": " 6-12M",
+            "inputID":"2",
+            "value":" 6-12",
+            "inputType":"checkbox"
+
+      },
+      {
+          "title": " 1-2Y",
+          "inputID":"3",
+          "value":" 1-2",
+          "inputType":"checkbox"
+
+    },
+    {
+        "title": " 2-3Y",
+        "inputID":"4",
+        "value":"2-3",
+        "inputType":"checkbox"
+
+   }
+  ]

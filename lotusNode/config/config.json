@@ -2,9 +2,9 @@
 {
 
       "createConnection": {
-        "host": "localhost:8000",
+        "host": "localhost",
         "user": "root",
-        "password": "yourpassword",
+        "password": "",
          "database": "MontessoriProjData"
     }
 

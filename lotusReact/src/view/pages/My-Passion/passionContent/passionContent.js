@@ -25,6 +25,7 @@ class Content extends React.Component {
                     <p>
                         <b className="text-muted">"The education of a small child therefor does not prepare him for school,but for life."</b>
                     </p>
+
                     <p>
 
                          In these vital years it is essential to help build a child's life skills,

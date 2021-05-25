@@ -17,7 +17,7 @@ let logInItems = ()=>{
 
 let logInJson=()=>{
   console.log("logInJson in db")
-  return JSON.parse('{ "header" :'+ JSON.stringify(headerJson.Header()) +',"Content" :' +JSON.stringify(logInItems())+',"Footer":'+JSON.stringify(footerJson.Footer()) +'}')
+  return JSON.parse('{ "headerItems" :'+ JSON.stringify(headerJson.headerItems()) +',"Content" :' +JSON.stringify(logInItems())+',"footerItems":'+JSON.stringify(footerJson.footerItems()) +'}')
 
 }
 

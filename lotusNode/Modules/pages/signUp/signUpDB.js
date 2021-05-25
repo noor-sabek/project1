@@ -15,7 +15,7 @@ let formItems=()=>{
 let signUpPage=()=>{
   console.log("signup in controller")
 
-  return JSON.parse('{ "header" :' +JSON.stringify(headerJson.Header())+',"Content" :'+ JSON.stringify(formItems())+',"Footer":'+JSON.stringify(footerJson.Footer()) +'}')
+  return JSON.parse('{ "headerItems" :' +JSON.stringify(headerJson.headerItems())+',"Content" :'+ JSON.stringify(formItems())+',"footerItemss":'+JSON.stringify(footerJson.footerItems()) +'}')
 
 }
 

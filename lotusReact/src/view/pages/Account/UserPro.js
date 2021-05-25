@@ -28,9 +28,9 @@ class UserPro extends React.Component{
     return (
       <div>
 
-            <Header data={this.state.data.header}/>
+            <Header data={this.state.data.headerItems}/>
              <LoginCard  data={this.state.data.content}/>
-            <Footer  data={this.state.data.Footer}/>
+            <Footer  data={this.state.data.footerItems}/>
 
       </div>
     );

@@ -29,7 +29,6 @@ class ListItem extends React.Component {
             </a>
 
 
-            <DropdownList item = {this.props.item.Dropdown}/>
 
 
         </li>

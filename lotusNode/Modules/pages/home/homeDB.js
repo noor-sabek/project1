@@ -9,36 +9,36 @@ const  catNavData= require('./jsonforHome/CatNavData.json');
 const  homeCarouselJson= require('./jsonforHome/homecarousel.json');
 const  feedbackCards= require('./jsonforHome/feedbackCards.json');
 
-let Carousel =()=> {
-  return(homeCarouselJson)
+let Carousel = async()=> {
+  console.log("carousel")
+  return await  GeneralDb.query("SELECT * FROM `carousel-items` WHERE `carousel-id` = 'home-page' ")
+  // return(homeCarouselJson)
 }
 
 
-let CatNavData =()=> {
-  return(catNavData)
+let CatNavData = async ()=> {
+console.log("CatNavData")
+  return  await GeneralDb.query("SELECT * FROM `toysoptions`")
+  //
+  // return(catNavData)
 }
 
-let Feedback =()=> {
-  return(feedbackCards)
+let Feedback = async ()=> {
+console.log("Feedback")
+    return await GeneralDb.query("SELECT * FROM `cardsitems` WHERE `card-for` ='feedback-home-Page'")
+  // return(feedbackCards)
 }
 
 
 //add content json
-let HomeContent=()=>{
-  return JSON.parse('{ "homeCarouselJson":'+JSON.stringify(Carousel())
-  +',"CatNavData":'+ JSON.stringify(CatNavData())+',"feedbackCards":'+JSON.stringify(Feedback())+'}')
-  // let DBquery = " ";
-  // let DBresult = GeneralDb.dbTreatment(DBquery);
-  // return(DBresult)
+let Content = async () => {
+console.log("home db")
+  return JSON.parse('{ "Carousel":'+JSON.stringify( await Carousel())
+  +',"CatNavData":'+ JSON.stringify( await CatNavData())+',"Feedback":'+JSON.stringify(await  Feedback())+'}')
+
 }
 //add all json for home
-let HomepageJson=()=>{
-  console.log("homepagejson in db")
-  return JSON.parse('{ "header" :'+ JSON.stringify(headerJson.Header())+',"Content" :' +JSON.stringify(HomeContent())+',"Footer":'+JSON.stringify(footerJson.Footer()) +'}')
+module.exports.homepageJ = async ()=>{
+  return JSON.parse('{ "headerItems" :'+ JSON.stringify(await headerJson.headerItems())+',"Content" :' +JSON.stringify( await Content())+',"footerItems":'+JSON.stringify( await footerJson.footerItems()) +'}')
 
 }
-
-console.log("homeDB")
-
-
-module.exports.homepageJ = HomepageJson();

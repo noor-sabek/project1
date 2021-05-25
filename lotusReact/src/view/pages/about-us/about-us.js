@@ -45,9 +45,9 @@ class AboutUs extends React.Component {
        return ("opppp about.js")
     return (
         <div>
-          <Header data={this.state.data.header}/>
+          <Header data={this.state.data.headerItems}/>
           <Cards data={this.state.data.content}/>
-          <Footer  data={this.state.data.Footer}/>
+          <Footer  data={this.state.data.footerItems}/>
 
        < /div>
 

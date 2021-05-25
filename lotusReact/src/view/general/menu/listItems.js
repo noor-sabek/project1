@@ -11,7 +11,7 @@ class ListItems extends React.Component {
 
   render() {
 
-    const ListItems = this.props.data.map((jsonpart) =>(
+    const ListItems = this.props.data.MenuItems.map((jsonpart) =>(
         <ListItem item={jsonpart} />));
   return (
            <ul className="  navbar-nav  col-lg-10 col-md-7  bg-dark text-center">{ListItems}</ul>

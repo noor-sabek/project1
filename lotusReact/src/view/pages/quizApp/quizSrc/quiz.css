@@ -1,5 +1,5 @@
 .content{
-    margin-block-start: 100px;
+      margin-block-start: 100px;
       display: block;
       margin-bottom: 100px;
       background-color: darkgrey;
@@ -39,6 +39,7 @@ text-align: left;
     cursor: pointer;
     background-color: #a2a2a2;
 }
+
 .quizbtn{
   background-color:#f5eb3c6e;
 
@@ -48,14 +49,15 @@ text-align: left;
   cursor: pointer;
 
     }
-    .finalPage{
+
+.finalPage{
         text-align: center;
         margin-top: 50px;
         background-color:#f5eb3c6e;
         padding-top: 50px;
     }
 
-    .finalPage h1{
+.finalPage h1{
         text-align: center;
         margin: 15px 0;
         font-size: 25px;

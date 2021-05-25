@@ -8,7 +8,7 @@ import ReactDOM from 'react-dom';
 
   const ConUsFormIn=[
         {
-            "title": "Name :",
+            "title": " Full Name :",
             "emoje":"&#129303;",
             "placeholder":"Enter first & last name",
             "type":"text",

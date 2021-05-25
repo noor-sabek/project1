@@ -11,7 +11,7 @@ class BuildCarousel extends React.Component  {
       const BuildCarousel = this.props.data.map((jsonpart) =>(
           <CarouselItem item={jsonpart} />));
         return (
-                <Carousel className=" slide rounded ">
+                <Carousel autoplay={true}>
                   {BuildCarousel}
                 </Carousel>
         );
@@ -28,7 +28,7 @@ class CarouselItem extends React.Component  {
 
         return (
                 <div>
-                    <img src={this.props.item.img} />
+                    <img src={this.props.item.image} />
                     <h1 className="carousel-caption">{this.props.item.caption}</h1>
                 </div>
         );

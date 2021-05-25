@@ -15,9 +15,9 @@ class HomeContent extends React.Component {
   render() {
     return (
       <div>
-        <MyCarousel data={this.props.data.homeCarouselJson}/>
+        <MyCarousel data={this.props.data.Carousel}/>
         <NavTabs data={this.props.data.CatNavData}/>
-        <FeedbackCards data={this.props.data.feedbackCards}/>
+        <FeedbackCards data={this.props.data.Feedback}/>
       </div>
     );
   }

@@ -6,7 +6,12 @@ const footerJson = require('../../parts/footer/footerController.js');
 const GeneralDb = require('../../general/DB/GeneralDb');
 
 
-let QuizContent = () => {
+let ques = async()=> {
+  console.log("ques")
+  return await  GeneralDb.query("SELECT * FROM `quiz-questions` ")
+  // return(homeCarouselJson)
+}
+let QuizContent =async () => {
   console.log("  QuizContent  in db")
 return(QuesAns)
     // let DBquery = " ";
@@ -15,11 +20,10 @@ return(QuesAns)
 }
 
  //add  json
- let QuizJson=()=>{
-   console.log("  Json  in db")
-   return JSON.parse('{ "header" :'+ JSON.stringify(headerJson.Header())+',"Content" :' +JSON.stringify(QuizContent())+',"Footer":'+JSON.stringify(footerJson.Footer()) +'}')
+
+
+ module.exports.quizPageJ = async()=>{
+   console.log("  quiz Json  in db")
+   return JSON.parse('{ "headerItems" :'+ JSON.stringify( await headerJson.headerItems())+',"Content" :' +JSON.stringify(await QuizContent())+',"footerItems":'+JSON.stringify(await footerJson.footerItems()) +'}')
 
  }
-
-
- module.exports.quizPageJ = QuizJson();

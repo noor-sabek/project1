@@ -25,9 +25,9 @@ class Home extends React.Component {
 
     return (
       <div>
-         <Header data={this.state.data.header}/>
+         <Header data={this.state.data.headerItems}/>
          <HomeContent data={this.state.data.Content}/>
-         <Footer data={this.state.data.Footer}/>
+         <Footer data={this.state.data.footerItems}/>
       </div>
     );
   }

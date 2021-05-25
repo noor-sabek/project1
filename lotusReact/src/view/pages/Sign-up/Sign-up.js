@@ -29,7 +29,7 @@ class SignUp extends React.Component {
 
     return (
     <div>
-      <Header data={this.state.data.header}/>
+      <Header data={this.state.data.headerItems}/>
 
       <div className=" container col-8 style pt-4">
          <div className=" pb_text_align_left">
@@ -44,7 +44,7 @@ class SignUp extends React.Component {
 
          </div>
        </div>
-    <Footer  data={this.state.data.Footer}/>
+    <Footer  data={this.state.data.footerItems}/>
    </div>
 
     );

@@ -3,15 +3,9 @@ const router = express.Router();
 const footerJson = require('./footerDB.js');
 
 
-
-
-
 //  ומחזירה אותו בקונטרוליר DBמקבלת מידע (גסון)מקובץ
-let footerItems = ()=>
+ module.exports.footerItems = async(req,res)=>
 {
-  console.log(footerJson.footerDB)
-return (footerJson.footerDB)
+  console.log("footer")
+return await footerJson.footerDB()
 }
-
-
- module.exports.Footer = (req,res) => footerItems()

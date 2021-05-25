@@ -12,18 +12,18 @@ const Login = require('./Modules/pages/Login/LogInController.js');
 const Home = require('./Modules/pages/home/homeController.js');
 const MyPassion = require('./Modules/pages/myPassion/myPassionController.js')
 const QuizApp = require('./Modules/pages/QuizApp/QuizAppController.js');
-const db=require('./Modules/general/DB/GeneralDb.js')
 
 
 
 
-app.get('/home',Home)
+
+app.get('/home',Home.homePage)
 
 app.get('/QuizApp',QuizApp)
 
 app.use('/Articles',Articles)
 
-app.get('/About',About)
+app.get('/About',About.aboutUsPage)
 
 app.get('/Signup',Signup )
 
@@ -31,7 +31,6 @@ app.get('/ContactUS',Contact)
 
 app.get('/myPassion',MyPassion)
 
-app.get('/db',db.dbTreatment)
 
 app.get('/userLogin',Login)
 
