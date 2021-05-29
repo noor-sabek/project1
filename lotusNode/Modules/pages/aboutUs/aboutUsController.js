@@ -6,12 +6,6 @@ const aboutUsJson=require('./aboutUsDB')
 
 
 //  ומחזירה אותו בקונטרוליר DBמקבלת מידע (גסון)מקובץ
-// let aboutUsPage =async (req,res)=>
-// {
-//    console.log(aboutUsJson.aboutUsPageJson)
-//   return ( await aboutUsJson.aboutUsPageJson)
-// }
-
 
  module.exports.aboutUsPage= async (req,res) =>
  {

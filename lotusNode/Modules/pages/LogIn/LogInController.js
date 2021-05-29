@@ -5,11 +5,9 @@ const Json = require('./LogInDB.js')
 
 
 //  ומחזירה אותו בקונטרוליר DBמקבלת מידע (גסון)מקובץ
-let loginPage = ()=>
-{
-  console.log("homePage")
-return (Json.logInPageJ)
-}
 
-
- module.exports= (req,res) => {res.json(loginPage())}
+ module.exports.loginPage= async (req,res) =>
+ {
+   console.log("log in  controller")
+   res.json(await Json.logInPageJ())
+ }

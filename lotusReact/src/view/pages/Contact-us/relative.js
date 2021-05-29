@@ -9,6 +9,7 @@ constructor(props){
   super(props);
  }
   render() {
+
     return (
       <div className="pb-3" >
             <p><strong> You are:</strong></p>
@@ -18,9 +19,10 @@ constructor(props){
                          return(
                               <div className="pb-1">
                                   <input type="radio" id={item.inputID} name={item.name} value={item.value}></input>
-                                  <label for={item.labelFor}>{item.labelFor}</label><br></br>
+                                  <label for={item.labelFor}>{item.title}</label><br></br>
                               </div>
                             );
+                        
                          }
                  )
               )

@@ -18,7 +18,7 @@ class LoginCard extends React.Component{
             <div className=" rounded-lg  border-1 shadow-lg">
               <img className="card-img-top rounded-circle userimg " src="/img/user-img.png " alt="Card image" ></img>
               <div className="card-body">
-                 <p className="card-title font-weight-bolder font-italic">Welcome Back</p>
+                 <p className="card-title font-weight-bolder font-italic">Welcome Back Member</p>
 
                  <LogInForm  data={this.props.data}/>
                 <AdminItems/>

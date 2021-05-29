@@ -3,12 +3,15 @@ import ReactDOM from 'react-dom';
 import MenuItems from './menuItems.js';
 import DropdownList from './dropdownList.js';
 
+
+
 class ListItem extends React.Component {
   constructor(props){
      super(props);
   }
 
   render() {
+    console.log(this.props.item)
 
    return (
 
@@ -27,11 +30,14 @@ class ListItem extends React.Component {
             <a className="nav-link dropdown-toggle" id="navbardrop" data-toggle="dropdown" href={this.props.item.url}>
                  <i className={this.props.item.icon}></i> {this.props.item.title}
             </a>
+            <div className="dropdown-menu">
 
-
-
+              <a class="dropdown-item" href={this.props.item.path}>{this.props.item.dropdownTitle}</a>
+            </div>
+            
 
         </li>
+
       )
 
     );

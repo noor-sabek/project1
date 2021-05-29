@@ -9,7 +9,6 @@ class DropdownList extends React.Component {
 
   }
   render() {
-    console.log(this.props.item)
 
     const Dropdown = this.props.item.map((jsonpart)=>(
         <DropdownItems dropdownitem={jsonpart} />));
@@ -32,7 +31,7 @@ class DropdownItems extends React.Component{
 
 
       return(
-      <a class="dropdown-item" href={this.props.dropdownitem.path}>{this.props.dropdownitem.title}</a>
+      <a class="dropdown-item" href={this.props.dropdownitem.path}>{this.props.dropdownitem.dropdownTitle}</a>
       );
 
   }

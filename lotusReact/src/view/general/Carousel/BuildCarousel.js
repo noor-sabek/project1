@@ -11,7 +11,7 @@ class BuildCarousel extends React.Component  {
       const BuildCarousel = this.props.data.map((jsonpart) =>(
           <CarouselItem item={jsonpart} />));
         return (
-                <Carousel autoplay={true}>
+                <Carousel >
                   {BuildCarousel}
                 </Carousel>
         );

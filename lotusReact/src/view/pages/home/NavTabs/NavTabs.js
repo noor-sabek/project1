@@ -24,7 +24,7 @@ class NavTabs extends React.Component {
 
 
           <div id="Monti-Toys" className=" part1 col-12 tab-pane fade mt-5 ">
-              <h3>Select Your Child's Age</h3>
+              <h3>Select Your Child's Age (in monthes)</h3>
               <div className="container">
                     <ULTITLE myjson={this.props.data}/>
                     <FillTabContent myjson={this.props.data} />

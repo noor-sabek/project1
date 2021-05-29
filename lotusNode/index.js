@@ -25,14 +25,14 @@ app.use('/Articles',Articles)
 
 app.get('/About',About.aboutUsPage)
 
-app.get('/Signup',Signup )
+app.get('/Signup',Signup.signup)
 
-app.get('/ContactUS',Contact)
+app.get('/ContactUS',Contact.contactPage)
 
 app.get('/myPassion',MyPassion)
 
 
-app.get('/userLogin',Login)
+app.get('/userLogin',Login.loginPage)
 
 app.listen(port, () => {
   console.log(` app listening on port ${port}!`)

@@ -29,7 +29,7 @@ class UserPro extends React.Component{
       <div>
 
             <Header data={this.state.data.headerItems}/>
-             <LoginCard  data={this.state.data.content}/>
+             <LoginCard  data={this.state.data.Content}/>
             <Footer  data={this.state.data.footerItems}/>
 
       </div>

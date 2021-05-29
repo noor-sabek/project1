@@ -9,10 +9,12 @@ constructor(props) {
   super(props);
   }
   render() {
+    console.log(this.props.data)
     return (
 
       				<div className="et_pb_newsletter_form et_pb_login_form  mt-5">
       					 <FormItems data={this.props.data}/>
+      
       				</div>
 
 

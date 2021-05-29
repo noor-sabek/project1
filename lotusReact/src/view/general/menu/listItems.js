@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 // import MenuItems from './menuItems.js';
 import ListItem from './listItem.js';
-
+import DropdownList from './dropdownList.js';
 
 class ListItems extends React.Component {
   constructor(props) {
@@ -11,10 +11,10 @@ class ListItems extends React.Component {
 
   render() {
 
-    const ListItems = this.props.data.MenuItems.map((jsonpart) =>(
+    const ListItems = this.props.data.LeftNavbar.map((jsonpart) =>(
         <ListItem item={jsonpart} />));
   return (
-           <ul className="  navbar-nav  col-lg-10 col-md-7  bg-dark text-center">{ListItems}</ul>
+           <ul className="  navbar-nav  col-lg-10 col-md-7  bg-dark text-center">{ListItems }</ul>
       );
   }
 }

@@ -5,11 +5,8 @@ const Json = require('./contactUsDB');
 
 
 
-   let contactUSpage = ()=>
-   {
-     console.log(Json.contactpageJ)
-   return (Json.contactpageJ)
-   }
-
-
-    module.exports= (req,res) => {res.json(contactUSpage())}
+    module.exports.contactPage= async (req,res) =>
+    {
+        console.log( "contact controller")
+      res.json( await Json.contactpageJ())
+    }

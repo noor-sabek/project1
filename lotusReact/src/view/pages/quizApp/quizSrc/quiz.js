@@ -8,7 +8,7 @@ export default function Quizque() {
 	const [score, setScore] = useState(0);
 
 	const handleAnswerOptionClick = (isCorrect) => {
-		if (isCorrect) {
+		if (isCorrect=1) {
 			setScore(score + 1);
 		}
 

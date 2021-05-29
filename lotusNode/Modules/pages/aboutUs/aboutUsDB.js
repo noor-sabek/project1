@@ -16,8 +16,8 @@ let AboutUsContentJson = async() => {
 
  module.exports.aboutUsPageJson = async()=>{
 return({
-   "headerItems": await headerJson.headerItems(),
-   "content": await AboutUsContentJson(),
-   "footerItems": await footerJson.footerItems()
- });
+       "headerItems": await headerJson.headerItems(),
+       "content": await AboutUsContentJson(),
+       "footerItems": await footerJson.footerItems()
+    });
  }

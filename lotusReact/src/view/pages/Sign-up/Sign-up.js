@@ -23,7 +23,7 @@ class SignUp extends React.Component {
   }
 
   render() {
-
+      console.log(this.state.data.Content)
         if (this.state.data.length===0)
            return ("opppp Signup.js")
 
@@ -40,7 +40,8 @@ class SignUp extends React.Component {
                  </div>
                </div>
 
-           <Form data={this.state.data.content} />
+           <Form data={this.state.data.Content} />
+           <button type="submit" class="btn btn-primary  border-0 " >SIGN UP</button>
 
          </div>
        </div>

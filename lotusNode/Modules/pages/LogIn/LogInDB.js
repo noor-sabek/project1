@@ -1,27 +1,21 @@
 const express = require('express');
-const router = express.Router();
 const headerJson=require('../../parts/header/headerController.js');
 const footerJson = require('../../parts/footer/footerController.js');
-const logInjson = require('./logInjson.json')
+// const logInjson = require('./logInjson.json')
+const GeneralDb = require('../../general/DB/GeneralDb');
 
 
+let logInItems = async()=>{
 
-let logInItems = ()=>{
-  // let DBquery = " ";
-  // let DBresult = GeneralDb.dbTreatment(DBquery);
-  // return(DBresult)
-  // //
-  return (logInjson)
+  return await GeneralDb.query("SELECT * FROM `formlist` INNER JOIN `formItems`ON `formlist`.id = `formItems`.formID WHERE `name`='log-in-form'")
+
 }
 
 
-let logInJson=()=>{
+module.exports.logInPageJ = async () => {
+
   console.log("logInJson in db")
-  return JSON.parse('{ "headerItems" :'+ JSON.stringify(headerJson.headerItems()) +',"Content" :' +JSON.stringify(logInItems())+',"footerItems":'+JSON.stringify(footerJson.footerItems()) +'}')
+
+  return JSON.parse('{ "headerItems" :'+ JSON.stringify( await headerJson.headerItems()) +',"Content" :' +JSON.stringify(await logInItems())+',"footerItems":'+JSON.stringify(await footerJson.footerItems()) +'}')
 
 }
-
-console.log("logIn db")
-
-
-module.exports.logInPageJ = logInJson();

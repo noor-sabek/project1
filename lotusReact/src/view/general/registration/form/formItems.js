@@ -28,12 +28,14 @@ class FormItem extends React.Component{
     }
 
     render() {
+      // console.log( this.props.data)
 
       const Formlist = this.props.data.map((jsonpart) =>(
           <FormItem item={jsonpart} />));
     return (
               <form action="/action_page.php " className=" mx-auto col-6"  method="post" id="">
                  {Formlist}
+                 
               </form>
 
         );
