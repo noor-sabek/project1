@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 import { Carousel } from 'react-responsive-carousel';
-
+import Styles from 'react-responsive-carousel/lib/styles/carousel.min.css';
 
 class BuildCarousel extends React.Component  {
   constructor(props) {
@@ -11,7 +11,7 @@ class BuildCarousel extends React.Component  {
       const BuildCarousel = this.props.data.map((jsonpart) =>(
           <CarouselItem item={jsonpart} />));
         return (
-                <Carousel >
+                <Carousel autoPlay infiniteLoop >
                   {BuildCarousel}
                 </Carousel>
         );

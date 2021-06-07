@@ -4,12 +4,8 @@ const JsonDB = require('./QuizAppDB');
 
 
 
-   let Quizpage = ()=>
-   {
-     console.log("Quizpage page controller")
-     return ( JsonDB.quizPageJ)
-
-   }
-
-
-    module.exports= (req,res) => {res.json(Quizpage())}
+    module.exports.Quizpage= async(req,res) =>
+     {
+        console.log("Quizpage page controller")
+       res.json(  await JsonDB.quizPageJ())
+     }

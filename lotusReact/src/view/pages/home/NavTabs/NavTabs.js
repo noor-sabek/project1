@@ -35,17 +35,18 @@ class NavTabs extends React.Component {
 
           <div id="Why-Montossori" className=" part2 col-12 tab-pane fade mt-5">
             <h3>Why Montossori</h3>
-            <p> Maria Montessori is as controversial a figure in education today as she was a half century ago. Alternately heralded as the century’s leading advocate for early childhood education, or dismissed as outdated and irrelevant, her research and the studies that she inspired helped change the course of education.</p>
+            <p> Maria Montessori is as controversial a figure in education today as she was a half century ago.<br></br> Alternately heralded as the century’s leading advocate for early childhood education,<br></br> or dismissed as outdated and irrelevant, her research and the studies that she inspired helped change the course of education.</p>
           </div>
 
           <div id="PARENT" className=" part2 col-12 tab-pane fade mt-5">
               <h3>Parent’s Role</h3>
-              <p>Hello parent and welcome to my website,Without parent support from home, your child will not get the full benefits of our program as intended. We truly believe the old saying, “it takes a village to raise a child”. We feel honored to partner with you in shaping and raising your child. Parenting isn't easy but it is so important </p>
+              <p>Hello parent and welcome to my website,Without parent support from home,<br></br> your child will not get the full benefits of our program as intended. We truly believe the old saying,<br></br><strong> “It takes a village to raise a child”</strong>.<br></br> We feel honored to partner with you in shaping and raising your child. Parenting isn't easy but it is so important </p>
           </div>
 
           <div id="Activities" className=" part2 col-12 tab-pane fade mt-5">
               <h3>Montessori Activities</h3>
-              <p>Toddler & Preschooler Montessori Activities - Using What You Already Have!,Today I want to share with you twelve really easy Montessori activities that use materials you may already have at home. Most of these activities are best suited to toddlers and preschoolers. Many of these activities I do with my toddler but an older child may like to do them independently.  </p>
+
+              <p>Toddler & Preschooler Montessori Activities - Using What You Already Have!,Today I want to share with you twelve really easy Montessori activities that use materials you may already have at home.<br></br> Most of these activities are best suited to toddlers and preschoolers.<br></br> Many of these activities I do with my toddler but an older child may like to do them independently.<br></br><strong> subscribe now to get easy Montessori activities   </strong> </p>
           </div>
 
           <div id="Gallery" className="part2 col-12 tab-pane fade mt-5">

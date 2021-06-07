@@ -40,6 +40,7 @@ class FooterPage extends React.Component {
                    <br></br>Give us a call :<a href="#">05028387377</a>
                   </p>
                     <Subscribe />
+  
 
 
         </MDBCol>
@@ -48,7 +49,7 @@ class FooterPage extends React.Component {
            <div className="footer-copyright text-right py-3">
         <MDBContainer fluid>
 
-          
+
         </MDBContainer>
       </div>
   </MDBFooter>

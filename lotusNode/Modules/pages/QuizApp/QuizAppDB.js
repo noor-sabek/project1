@@ -11,22 +11,30 @@ let questions = async()=> {
   return await  GeneralDb.query("SELECT * FROM `quiz-questions` ")
 
 }
-let answers =async () => {
+let answerOptions =async () => {
   console.log("  QuizContent  in db")
-  return await  GeneralDb.query("SELECT * FROM `quiz-answeroptions` ")
+  return await  GeneralDb.query("SELECT Qnum,answerText,isCorrect FROM `quiz-answeroptions`  ")
 }
+//
+// let QuizContent =async () => {
+//   console.log("  QuizContent  in db")
+// return await  GeneralDb.query("SELECT `quiz-questions`.`questionText`, `quiz-answeroptions`.`answerText`, `quiz-answeroptions`.`isCorrect` FROM `quiz` INNER JOIN `quiz-questions` ON `quiz-questions`.id = quiz.QuestionID INNER JOIN `quiz-answeroptions` ON `quiz-answeroptions`.`Qnum` = `quiz`.AnswersID")
+//
+// }
 
-let QuizContent =async () => {
-  console.log("  QuizContent  in db")
-return await  GeneralDb.query("SELECT `quiz-questions`.`questionText`, `quiz-answeroptions`.`answerText`, `quiz-answeroptions`.`isCorrect FROM ( ( `quiz` INNER JOIN `quiz-questions` ON `quiz-questions`.`id` = quiz.`QuestionID` ) INNER JOIN `quiz-answeroptions` ON `quiz-answeroptions`.`Q-num` = quiz.AnswersID )")
 
+let quizContent = async()=>{
+console.log()
+  return {
+    "questions": await questions(),
+    "answerOptions": await answerOptions()
+  }
 }
-
- //add  json
+ // add  json
 
 
  module.exports.quizPageJ = async()=>{
-   console.log("  quiz Json  in db")
-   return JSON.parse('{ "headerItems" :'+ JSON.stringify( await headerJson.headerItems())+',"Content" :' +JSON.stringify(await QuizContent())+',"footerItems":'+JSON.stringify(await footerJson.footerItems()) +'}')
+   console.log( await quizContent())
+   return JSON.parse('{ "headerItems" :'+ JSON.stringify( await headerJson.headerItems())+',"Content" :' +JSON.stringify(await quizContent())+',"footerItems":'+JSON.stringify(await footerJson.footerItems()) +'}')
 
  }

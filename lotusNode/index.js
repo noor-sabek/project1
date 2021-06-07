@@ -19,7 +19,7 @@ const QuizApp = require('./Modules/pages/QuizApp/QuizAppController.js');
 
 app.get('/home',Home.homePage)
 
-app.get('/QuizApp',QuizApp)
+app.get('/QuizApp',QuizApp.Quizpage)
 
 app.use('/Articles',Articles)
 

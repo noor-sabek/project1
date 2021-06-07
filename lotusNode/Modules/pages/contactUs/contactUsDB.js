@@ -11,7 +11,7 @@ const GeneralDb = require('../../general/DB/GeneralDb');
 
 let form = async() => {
     return await GeneralDb.query(
-      "SELECT * FROM `formlist` INNER JOIN `formItems`ON `formlist`.id = `formItems`.formID WHERE `name`='contact-us-form' ")
+      "SELECT * FROM `formlist` INNER JOIN `formItems`ON `formlist`.id = `formItems`.formID WHERE `name`='contact-us-form' AND `formItems`.id BETWEEN 7 AND 10 ")
 
 }
 

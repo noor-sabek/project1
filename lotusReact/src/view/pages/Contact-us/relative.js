@@ -9,24 +9,28 @@ constructor(props){
   super(props);
  }
   render() {
-
+    let index=0;
+  console.log(this.props.data[0].id)
     return (
       <div className="pb-3" >
             <p><strong> You are:</strong></p>
-            { this.props.data.map(
-                (
-               item => {
+            { this.props.data.map((item,index)=>
+                    {
                          return(
-                              <div className="pb-1">
-                                  <input type="radio" id={item.inputID} name={item.name} value={item.value}></input>
-                                  <label for={item.labelFor}>{item.title}</label><br></br>
-                              </div>
-                            );
-                        
-                         }
-                 )
-              )
-          }
+
+
+
+                                <div className="pb-1">
+                                    <input  type="radio" id={item.inputID} name={item.name} value={item.value}></input>
+                                    <label for={item.labelFor}>{item.title}</label><br></br>
+
+                                </div>
+
+                               );
+
+                      }
+                    )
+                }
 
       </div>
 

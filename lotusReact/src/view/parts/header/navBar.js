@@ -25,7 +25,7 @@ class NavBar extends React.Component {
               <ListItems data={this.props.data}/>
             </div>
 
-             <RightNav/>
+             <RightNav data={this.props.data}/>
 
        </nav>
 

@@ -1,9 +1,7 @@
  import React from 'react';
 import ReactDOM from 'react-dom';
-import Carousel from 'react-bootstrap/Carousel';
 import Header from '../../parts/header/header.js';
 import Footer from '../../parts/footer/footer.js';
-import AboutusCards from './AboutusCards.js';
 import Card  from '../../general/card/card.js';
 import'./AboutusCards.css';
 

@@ -1,5 +1,5 @@
 const express = require('express')
-const navjson = require('./navJson.json');
+// const navjson = require('./navJson.json');
 const GeneralDb = require('../../general/DB/GeneralDb');
 
 
@@ -16,11 +16,18 @@ let RightNavbar=async ()=>{
 let LeftNavbar =async () => {
   return  await GeneralDb.query("SELECT * FROM `menulist` INNER JOIN `menuitems`ON menulist.id = menuitems.menuID WHERE name='navbar'");
   }
-  //
-  // let MenuItems = async()=>{
-  //   return await  JSON.parse('{"LeftNavbar":'+JSON.stringify(await MenuItems())+',"Dropdown" :'+ JSON.stringify(Dropdown())+',"RightNavbar" :'+ JSON.stringify(RightNav())+"}")
-  // }
 
-module.exports.Header=async () => {
+
+module.exports.Header= async () => {
     return JSON.parse('{"LeftNavbar":'+JSON.stringify(await LeftNavbar())+',"Dropdown" :'+ JSON.stringify(Dropdown())+',"RightNavbar" :'+ JSON.stringify(RightNavbar())+"}")
 }
+
+
+
+
+
+
+//
+// let MenuItems = async()=>{
+//   return await  JSON.parse('{"LeftNavbar":'+JSON.stringify(await MenuItems())+',"Dropdown" :'+ JSON.stringify(Dropdown())+',"RightNavbar" :'+ JSON.stringify(RightNav())+"}")
+// }

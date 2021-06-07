@@ -1,6 +1,5 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import MenuItems from './menuItems.js';
 import DropdownList from './dropdownList.js';
 
 
@@ -34,7 +33,7 @@ class ListItem extends React.Component {
 
               <a class="dropdown-item" href={this.props.item.path}>{this.props.item.dropdownTitle}</a>
             </div>
-            
+
 
         </li>
 

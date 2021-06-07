@@ -2,13 +2,14 @@
       margin-block-start: 100px;
       display: block;
       margin-bottom: 100px;
-      background-color: darkgrey;
+      background-color:#d2c2a5;
+
   }
 
 
 
 .question-count{
-
+    text-shadow: 0px 0px 5px rgb(255 255 255), 0px 0px 10px rgb(255 255 255), 0px 0px 15px rgb(255 255 255), 0px 0px 20px rgb(255 75 24 / 47%), 0px 0px 30px rgb(255 203 24 / 42%), 0px 0px 40px rgb(243 255 24), 0px 0px 55px rgb(0 123 255 / 56%), 0px 0px 75px rgb(73 255 24);
   color: black;
   font-size: xx-large;
 
@@ -18,14 +19,16 @@
 
 .question{
 margin: 50px;
-font-size: 25px;
+font-size: 35px;
 font-family: Arial,sans-serif;
 font-weight: normal;
-color: #b11625;
+color: #1d2124;
 text-transform: none;
 text-shadow: none;
 text-align: left;
-
+text-shadow: 2px 2px 0px rgb(0 123 255 / 50%), -14px -7px 20px rgb(0 0 0 / 15%);
+outline-style: outset;
+outline-color: #d0c01d;;
 
 }
 
@@ -34,27 +37,30 @@ text-align: left;
     border-left: 4px solid #FF3B3B;
     background-color: #bbb;
     margin: 0 0 5px;
+
 }
 .Answers:hover{
     cursor: pointer;
-    background-color: #a2a2a2;
+    background-color: #dee2e6cc;;
 }
 
 .quizbtn{
+  display:inline-block ;
   background-color:#f5eb3c6e;
-
-  padding: 10px 30px;
+  box-sizing:border-box;
+  padding: 20px;
   border: 1;
   border-radius: 8px;
   cursor: pointer;
-
+  background:rgb(202 188 139);
+  text-shadow: 0px 0px 5px rgb(255 255 255), 0px 0px 10px rgb(255 255 255), 0px 0px 15px rgb(255 255 255), 0px 0px 20px rgb(255 75 24 / 47%), 0px 0px 30px rgb(255 203 24 / 42%), 0px 0px 40px rgb(243 255 24), 0px 0px 55px rgb(0 123 255 / 56%), 0px 0px 75px rgb(73 255 24);
     }
 
 .finalPage{
         text-align: center;
-        margin-top: 50px;
-        background-color:#f5eb3c6e;
+        /* margin-top: 50px; */
         padding-top: 50px;
+        border-radius: 10px;
     }
 
 .finalPage h1{
@@ -65,5 +71,5 @@ text-align: left;
         font-weight: bold;
         color: #008416;
         text-transform: none;
-        text-shadow: none;
+        text-shadow:  0px 0px 5px rgb(255 255 255);
     }
