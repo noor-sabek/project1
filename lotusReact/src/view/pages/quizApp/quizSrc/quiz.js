@@ -37,7 +37,7 @@ console.log()
 			     		You scored {score} out of {props.data.questions.length}
 
 					</strong></p>
-				
+
 					<a href="http://localhost:3000/QuizApp"> Try Again</a>
 				</div>
 			) : (

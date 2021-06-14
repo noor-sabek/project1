@@ -10,6 +10,7 @@ class LoginCard extends React.Component{
   }
 
   render() {
+    console.log(this.props.data)
 
     return(
       <div class=" cards container  text-center mt-5">
@@ -20,8 +21,8 @@ class LoginCard extends React.Component{
               <div className="card-body">
                  <p className="card-title font-weight-bolder font-italic">Welcome Back Member</p>
 
-                 <LogInForm  data={this.props.data}/>
-                <AdminItems/>
+                   <LogInForm  data={this.props.data}/>
+                   <AdminItems/>
 
               </div>
             </div>

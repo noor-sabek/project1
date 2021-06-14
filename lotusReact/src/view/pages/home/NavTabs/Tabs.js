@@ -5,8 +5,11 @@ import TabParts from './TabParts.js';
 
 
 class Tabs extends React.Component{
+  constructor(props){
+    super(props);
+  }
 render() {
-         const TabsInfo = TitleHeading.map((jsonpart) =>(
+         const TabsInfo = this.props.item.map((jsonpart) =>(
               <TabParts item={jsonpart} />));
 
      return(

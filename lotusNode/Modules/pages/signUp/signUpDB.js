@@ -11,6 +11,16 @@ let formItems = async() => {
       "SELECT * FROM `formlist` INNER JOIN `formItems`ON `formlist`.id = `formItems`.formID WHERE `name`='sign-up-form' ")
 
 }
+
+let insertData = async() =>{
+
+ return await GeneralDb.query(
+   "INSERT INTO `users`(`user-id`, `name`, `password`, `mail`) VALUES ([value-1],[value-2],[value-3],[value-4])")
+
+}
+
+
+
 module.exports.signup = async ()=>{
   console.log("signup db")
 

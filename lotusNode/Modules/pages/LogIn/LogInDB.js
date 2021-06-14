@@ -1,7 +1,6 @@
 const express = require('express');
 const headerJson=require('../../parts/header/headerController.js');
 const footerJson = require('../../parts/footer/footerController.js');
-// const logInjson = require('./logInjson.json')
 const GeneralDb = require('../../general/DB/GeneralDb');
 
 

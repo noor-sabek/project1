@@ -18,7 +18,7 @@ import ReactDOM from 'react-dom';
             "title":"Why Montossori",
             "id":"Why-Montossori",
             "url":"#Why-Montossori",
-            "info":"Maria Montessori is as controversial a figure in education today as she was a half century ago. Alternately heralded as the century’s leading advocate for early childhood education, or dismissed as outdated and irrelevant, her research and the studies that she inspired helped change the course of education.",
+            "info":"Mccbcbaria Montessori is as controversial a figure in education today as she was a half century ago. Alternately heralded as the century’s leading advocate for early childhood education, or dismissed as outdated and irrelevant, her research and the studies that she inspired helped change the course of education.",
             "icon" :"fa fa-gamepad icon"
 
       },
