@@ -24,8 +24,8 @@ class FooterLink extends React.Component{
 
     render(){
        return(
-               <li className="list-unstyled">
-               <a href={this.props.item.path}> <i className={this.props.item.icon}></i>{this.props.item.title}</a>
+               <li className="list-unstyled ">
+               <a  href={this.props.item.path}> <i className={this.props.item.icon}></i>{this.props.item.title}</a>
              </li>
           );
      }

@@ -16,8 +16,8 @@ class TabContent extends React.Component {
                <div className=" d-block col-12 col-lg-6  ">
                   <img className="picOfToy" src={this.props.item.picture} ></img>
                </div>
-               <div className="  d-block col-12 col-md-6 bg-gray text-left text-break ">
-                    <p><b><code>for {this.props.item.title} months old </code></b><br></br>
+               <div className="   lead d-block col-12 col-md-6 bg-gray text-left text-break ">
+                    <p ><b><code className="font-italic">for {this.props.item.title} months old </code></b><br></br>
                          {this.props.item.information}
                     </p>
                </div>

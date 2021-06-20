@@ -14,18 +14,19 @@ class InfoModal extends React.Component {
 
    return (
 
+// tips to increase the knowledge
+     <div className=" modalQuote mb-2 mt-5 mb-5 ">
+           <span className="   w3-spin click w3-tag w3-xxlarge w3-padding w3-red " >
+                Click
+          </span>
 
-     <div class=" modalQuote mb-2 mt-5 mb-5 container ">
-
-           <button type="button" className="adviceBtn btn btn-primary border-0" data-toggle="modal" data-target="#myModal">
-             Add to your knowledge
-           </button>
-           <div className="modal fade " id="myModal"  aria-hidden="true">
+          <img src="/img/tip.jpg " className=" modalbtn w3-rounded w3-btn"  data-target="#myModal" data-toggle="modal" />
+           <div className="modal fade  w3-animate-zoom" id="myModal"  aria-hidden="true">
              <div className="modal-dialog modal-lg">
                <div className="modal-content">
 
-                <div className="modal-header">
-                  <h4 className="modal-title">{this.props.data[randomNum].title}</h4>
+                <div className="modal-header ">
+                  <h4 className="modal-title ">{this.props.data[randomNum].title}</h4>
                   <button type="button" className="close" data-dismiss="modal">×</button>
                 </div>
 
@@ -33,7 +34,7 @@ class InfoModal extends React.Component {
                 <div class="modal-body ">
                   <blockquote class="blockquote text-center">
                     <img src={this.props.data[randomNum].img}/>
-                   <p class="mb-0 pt-5">{this.props.data[randomNum].contentBodyInfo}</p>
+                   <p class="mb-0 pt-5 text-monospace">{this.props.data[randomNum].contentBodyInfo}</p>
                    <footer class="blockquote-footer"> {this.props.data[randomNum].footerBy} <cite title="Source Title"> {this.props.data[randomNum].footerSource}</cite></footer>
                  </blockquote>
                 </div>

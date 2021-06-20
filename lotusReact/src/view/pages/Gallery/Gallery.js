@@ -2,18 +2,18 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import Header from '../../parts/header/header.js';
 import Footer from '../../parts/footer/footer.js';
-import Content from './passionContent/passionContent.js';
+import Album from './AlbumPic.js';
 
 
 
-class MyPassion extends React.Component {
+class Gallery extends React.Component {
   constructor() {
     super();
     this.state = { data: [] };
   }
 
   componentDidMount() {
-    fetch(`/myPassion`)
+    fetch(`/Gallery`)
 
       .then(res => res.json())
       .then(json => this.setState({ data: json }))
@@ -28,7 +28,7 @@ class MyPassion extends React.Component {
     return (
       <div>
       <Header data={this.state.data.headerItems}/>
-      <Content />
+      <Album data={this.state.data.Content}/>
       <Footer data={this.state.data.footerItems}/>
       </div>
 
@@ -38,4 +38,4 @@ class MyPassion extends React.Component {
 
 
 
-export default MyPassion ;
+export default Gallery ;

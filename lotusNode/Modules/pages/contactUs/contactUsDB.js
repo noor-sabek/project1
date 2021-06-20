@@ -1,14 +1,11 @@
 
 const express = require('express');
-const router = express.Router();
 const headerJson=require('../../parts/header/headerController');
 const footerJson = require('../../parts/footer/footerController.js');
-// const formjson = require('./jsons/contactUsf.json');
-// const AgeOptions = require('./jsons/ageOptions.json');
-// const RelativeJson = require('./jsons/relativeJson.json');
-// const GenderSelector = require('./jsons/selectGender.json');
 const GeneralDb = require('../../general/DB/GeneralDb');
 
+
+// structure query from db ,storing and managing the data 
 let form = async() => {
     return await GeneralDb.query(
       "SELECT * FROM `formlist` INNER JOIN `formItems`ON `formlist`.id = `formItems`.formID WHERE `name`='contact-us-form' AND `formItems`.id BETWEEN 7 AND 10 ")
@@ -27,10 +24,6 @@ let  genderSelector = async()=>{
 
   return await GeneralDb.query("SELECT * FROM `formlist` INNER JOIN `formItems`ON `formlist`.id = `formItems`.formID WHERE `name`='contact-us-form' AND inputID='genderSelector' ")
 }
-//
-// let message = async() =>{
-//   return await GeneralDb.query({"message":" "})
-// }
 
 
 let content =async ()=>{
@@ -42,7 +35,7 @@ return(
         "ageOptions": await ageOptions(),
         "relative":await relative(),
         "genderSelector": await genderSelector(),
-        // "message": await message()
+
 
       })
 }

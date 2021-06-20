@@ -9,11 +9,7 @@ let getAllArticles=()=>{
   )
 }
 
-let craeteArticle =()=> {
-    return (
-    { "message":'create a new article'}
-   )
- }
+
 
  //id for article to know witch one we want to update    // const articleId = req.params.articleId /- ${articleId}`;
  let updateArticle =(req) =>{
@@ -29,7 +25,7 @@ let craeteArticle =()=> {
   let ArticlesContent=()=>{
     console.log("article db");
     return JSON.parse('{ "getAllArticles":'+JSON.stringify(getAllArticles())
-    +',"craeteArticle":'+ JSON.stringify(craeteArticle())+',"updateArticle":'+JSON.stringify(updateArticle())+',"deleteArticle":'+JSON.stringify(deleteArticle())+'}')
+    +',"updateArticle":'+ JSON.stringify(updateArticle())+',"updateArticle":'+JSON.stringify(updateArticle())+',"deleteArticle":'+JSON.stringify(deleteArticle())+'}')
     // let DBquery = " ";
     // let DBresult = GeneralDb.dbTreatment(DBquery);
     // return(DBresult)

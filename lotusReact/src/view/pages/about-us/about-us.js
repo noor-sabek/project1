@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 import Header from '../../parts/header/header.js';
 import Footer from '../../parts/footer/footer.js';
 import Card  from '../../general/card/card.js';
+import MyPassion from './passionContent.js';
 import'./AboutusCards.css';
 
 
@@ -17,10 +18,15 @@ class Cards extends React.Component {
    return (
           <div class=" cards container  text-center mt-5">
                   <h1 className="text-center Heading mt-5 py-5"> ℍ𝕠𝕨 ℝ𝕒𝕚𝕟𝕓𝕠𝕨 𝕜𝕚𝕕𝕤 𝕨𝕠𝕣𝕜𝕤</h1>
+                  <h2 className="w3-animate-right text-monospace"> The Montessori Method Of Education </h2>
+
+                       <MyPassion />
+
                   <div class="card-deck py-5 ">
                              {Cards}
                   </div>
-                  <div> “ The goal of early childhood should be to activate the child’s own natural desire to learn.” </div>
+
+
             </div>
       );
   }

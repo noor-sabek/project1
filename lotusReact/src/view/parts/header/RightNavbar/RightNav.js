@@ -9,9 +9,10 @@ class RightNav extends React.Component {
     super(props);
   }
   render() {
+    console.log(this.props.data.RightNavbar)
     return(
            <div className="float-right">
-            <form className=" search form-inline justify-content-right" action="/action_page.php">
+            <form className=" search form-inline justify-content-right" action="/">
               <span> <i class="fa fa-search icon"></i></span>
                   <a className="ml-3" href="userLogin"><i class="fa fa-user-o icon " > </i></a>
             </form>

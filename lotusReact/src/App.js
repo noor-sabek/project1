@@ -5,7 +5,7 @@ import './App.css';
 
 import Home from './view/pages/home/home.js';
 import QuizApp from './view/pages/quizApp/quizApp.js';
-import MyPassion from './view/pages/My-Passion/MyPassion.js';
+import Gallery from './view/pages/Gallery/Gallery.js';
 import ContactUs from './view/pages/Contact-us/contact-us.js';
 import SignUp from './view/pages/Sign-up/Sign-up.js';
 import AboutUs from './view/pages/about-us/about-us.js';
@@ -21,7 +21,7 @@ class App extends React.Component {
                 <Route path="/" component={Home} exact />
                 <Route path="/QuizApp" component={QuizApp}  />
                 <Route path="/Sign-up" component={SignUp}  />
-                <Route path="/My-Passion" component={MyPassion}  />
+                <Route path="/Gallery" component={Gallery}  />
                 <Route path="/Contact-Us" component={ContactUs}  />
                 <Route path="/About-Us" component={AboutUs}  />
                 <Route path="/userLogin" component={UserLogin}  />

@@ -28,8 +28,8 @@ class CarouselItem extends React.Component  {
 
         return (
                 <div>
-                    <img src={this.props.item.image} />
-                    <h1 className="carousel-caption">{this.props.item.caption}</h1>
+                    <img  className="" src={this.props.item.image} />
+                    <h1 className="carousel-caption w3-animate">{this.props.item.caption}</h1>
                 </div>
         );
     }

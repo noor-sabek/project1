@@ -15,15 +15,26 @@ img.toypic{
 }
 
 .nav-tabs .nav-link{
-    color: #84373e !important;
+    color: #38848E !important;
     text-decoration: none!important;
     margin-top:30px;
-   background-color: #dee5e8 !important;
+    margin-right: 3px;
+   background-color:#c3d6de !important;
+
   }
 
 
 .nav-tabs .nav-link:hover{
   opacity:0.8;
-  border-bottom: 1px solid #80450d ;
+  border-bottom: 2px solid #80450d ;
+    border-color: #f8f9fa #f8f9fa #1a3435;
 
+}
+.nav-tabs .nav-link.active {
+    border-color: #f8f9fa #f8f9fa #1d2124;
+}
+.btn-secondary {
+    color: #fff;
+    background-color: #38848e;
+    border-color: var(--white);
 }

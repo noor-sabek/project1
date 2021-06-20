@@ -1,7 +1,7 @@
 
 const express = require('express');
 const Form = require('./signUpDB');
-
+const bodyParser = require('body-parser');
 
 
  module.exports.signup = async (req,res) =>

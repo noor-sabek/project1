@@ -1,6 +1,5 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Navbar from './../../parts/header/navBar.js';
 import './logo.css';
 import logo from '../../../Cssimg/LOGO-RAINBOW.png';
 

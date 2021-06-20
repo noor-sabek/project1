@@ -15,6 +15,10 @@ class LoginCard extends React.Component{
     return(
       <div class=" cards container  text-center mt-5">
         <h1 className="text-center Heading mt-5 py-5"> ℝ𝕒𝕚𝕟𝕓𝕠𝕨 𝕜𝕚𝕕𝕤 </h1>
+        <div className="w3-panel w3-leftbar w3-sand">
+            <p className="w3-xxlarge w3-serif">
+            <i>  “ The goal of early childhood should be to activate the child’s own natural desire to learn.”</i></p>
+         </div>
           <div class="userCard py-5 ">
             <div className=" rounded-lg  border-1 shadow-lg">
               <img className="card-img-top rounded-circle userimg " src="/img/user-img.png " alt="Card image" ></img>

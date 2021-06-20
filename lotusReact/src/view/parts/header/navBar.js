@@ -11,6 +11,7 @@ class NavBar extends React.Component {
     super(props);
   }
   render() {
+    console.log(this.props.data.Dropdown)
    return (
 
         <nav className="navbar navbar-expand-lg bg-dark navbar-dark fixed-top ">

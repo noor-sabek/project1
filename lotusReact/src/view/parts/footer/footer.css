@@ -1,8 +1,8 @@
 
 /* footer css */
 .footer{
-  background-image: url("../../../Cssimg/ba.jpg");
-  background-repeat: no-repeat;
+    background-image: url("../../../Cssimg/ba.jpg");
+    background-repeat: no-repeat;
     font-size: 20px;
     height: 700px;
     font-family: Verdana, Geneva, sans-serif;
@@ -16,4 +16,7 @@
 
 
 
+}
+.fa{
+  font-size: larger;
 }

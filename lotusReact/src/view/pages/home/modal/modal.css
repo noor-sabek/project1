@@ -3,7 +3,15 @@
   background-color:#f9989859;
   display: none;
 }
+.modalbtn{
+  width: 100%;
+  height: auto;
 
+}
+ .click{
+   transform:rotate(-5deg);
+   padding-top: 10px;
+ }
 
 .blockquote {
     font-size: 2rem!important;
@@ -14,7 +22,7 @@
 
 }
 
-.adviceBtn.btn.btn-primary{
+.adviceBtn.btn.btn-primary {
 
   background-color: #ad8c6d;
    position: relative;

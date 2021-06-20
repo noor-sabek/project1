@@ -3,10 +3,6 @@ const express = require('express')
 const GeneralDb = require('../../general/DB/GeneralDb');
 
 
-let Dropdown=async ()=>{
-  return await GeneralDb.query("SELECT * FROM `menulist` INNER JOIN `menuitems`ON menulist.id = menuitems.menuID WHERE name='dropdownItems'")
-}
-
 
 let RightNavbar=async ()=>{
   return await GeneralDb.query("SELECT * FROM `menulist` INNER JOIN `menuitems`ON menulist.id = menuitems.menuID WHERE name='Right-menu'")
@@ -19,15 +15,5 @@ let LeftNavbar =async () => {
 
 
 module.exports.Header= async () => {
-    return JSON.parse('{"LeftNavbar":'+JSON.stringify(await LeftNavbar())+',"Dropdown" :'+ JSON.stringify(Dropdown())+',"RightNavbar" :'+ JSON.stringify(RightNavbar())+"}")
+    return JSON.parse('{"LeftNavbar":'+JSON.stringify(await LeftNavbar())+','+"RightNavbar" :'+ JSON.stringify( await RightNavbar())+"}")
 }
-
-
-
-
-
-
-//
-// let MenuItems = async()=>{
-//   return await  JSON.parse('{"LeftNavbar":'+JSON.stringify(await MenuItems())+',"Dropdown" :'+ JSON.stringify(Dropdown())+',"RightNavbar" :'+ JSON.stringify(RightNav())+"}")
-// }
