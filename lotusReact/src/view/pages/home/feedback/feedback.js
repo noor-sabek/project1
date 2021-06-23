@@ -13,7 +13,7 @@ class FeedbackCards extends React.Component {
    const Cards = this.props.data.map((jsonpart) =>(
         <Card item={jsonpart} />));
    return (
-          <div class=" cards container  text-center mt-5">
+          <div class=" cards container  text-center mt-5 p">
                   <h1 className="text-center feedbackHeading mt-5 py-5"> What Parents Are Saying</h1>
                   <div class="card-deck py-5 ">
                              {Cards}

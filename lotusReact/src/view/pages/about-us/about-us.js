@@ -22,7 +22,7 @@ class Cards extends React.Component {
 
                        <MyPassion />
 
-                  <div class="card-deck py-5 ">
+                  <div class="card-deck ">
                              {Cards}
                   </div>
 

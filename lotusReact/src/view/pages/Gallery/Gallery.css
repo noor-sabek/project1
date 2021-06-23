@@ -1,8 +1,9 @@
 .imgCard{
-  width: 300px;
+  width: 450px;
   height: 300px;
-  padding-bottom: 20px;
-
+  padding-bottom: 80px;
+  margin-bottom: 50px;
+  /* margin-top:100px; */
 
 
 }
@@ -10,37 +11,38 @@
   display: -webkit-box; /* Not needed if autoprefixing */
   display: -ms-flexbox; /* Not needed if autoprefixing */
   display: flex;
-  margin-left: -30px; /* gutter size offset */
+  /* gutter size offset */
   width: auto;
 }
 .my-masonry-grid_column {
-  padding-left: 40px; /* gutter size */
+  padding-left: 50px; /* gutter size */
   background-clip: padding-box;
-}
-
-/* Style your items */
-.my-masonry-grid_column > div { /* change div to reference your elements you put in <Masonry> */
-  background: grey;
 
 }
+
+
 
 
 .flip-card {
   background-color: transparent;
-  width: 340px;
+  width: 500px;
   height: 300px;
   perspective: 1000px;
-  padding-left: 40px;
+  padding-left: 70px;
+  padding-right: 50px;
+  margin-bottom: 50px;
+
 }
 
 .flip-card-inner {
   position: relative;
   width: 100%;
   height: 100%;
+  margin-bottom: 50px;
   text-align: center;
-  transition:  0.9s;
+  transition:  0.7s;
   transform-style: preserve-3d;
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+
 }
 
 .flip-card:hover .flip-card-inner {
@@ -57,10 +59,12 @@
 
 .flip-card-front {
   color: black;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-bottom: 80px;
 }
 
 .flip-card-back {
   background-color: #F9674E;
-  color: white;
   transform: rotateY(180deg);
 }

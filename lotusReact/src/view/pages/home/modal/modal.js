@@ -15,13 +15,15 @@ class InfoModal extends React.Component {
    return (
 
 // tips to increase the knowledge
-     <div className=" modalQuote mb-2 mt-5 mb-5 ">
-           <span className="   w3-spin click w3-tag w3-xxlarge w3-padding w3-red " >
+     <div className=" modalQuote mb-2 mt-5 mb-5  p">
+
+           <p className="  w3-animate-zoom click  w3-xxlarge w3-padding w3-red animated-btn " >
                 Click
-          </span>
+          </p>
 
           <img src="/img/tip.jpg " className=" modalbtn w3-rounded w3-btn"  data-target="#myModal" data-toggle="modal" />
            <div className="modal fade  w3-animate-zoom" id="myModal"  aria-hidden="true">
+             <a class="animated-btn text-white" ><i className="fa fa-play"></i></a>
              <div className="modal-dialog modal-lg">
                <div className="modal-content">
 

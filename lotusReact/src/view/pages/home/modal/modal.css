@@ -1,4 +1,7 @@
-
+.p{
+  padding-top:50px;
+  padding-bottom: 100px;
+}
 .modal{
   background-color:#f9989859;
   display: none;
@@ -10,7 +13,8 @@
 }
  .click{
    transform:rotate(-5deg);
-   padding-top: 10px;
+   position: absolute;
+   margin-bottom:-50px;
  }
 
 .blockquote {
@@ -22,24 +26,61 @@
 
 }
 
-.adviceBtn.btn.btn-primary {
 
-  background-color: #ad8c6d;
-   position: relative;
-   animation-name: adviceBtn;
-   animation-delay: 2s;
-   animation-duration: 6s;
-  animation-iteration-count: infinite;
-   animation-direction: revert;
+/*  PLAY BUTTON */
 
+.animated-btn {
 
-
+    width: 130px;
+    height: 100px;
+    border-radius: 90%;
+    line-height: 80px;
+    display: inline-block;
+    text-align: center;
+    background: #ff3f3f;
+    position: relative;
 }
 
+.animated-btn::before, .animated-btn::after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    border-radius: 90%;
+    background: rgba(255, 63, 63, 0.8);
+    animation: ripple-1 2s infinite ease-in-out;
+    z-index: -1;
+}
 
+.animated-btn::after {
+    background: rgba(255, 63, 63, 0.6);
+    animation: ripple-2 2s infinite ease-in-out;
+    animation-delay: 0.5s;
+}
 
-@keyframes adviceBtn {
-  0%   {background-color:#c5515199;; left:0px; top:0px;}
-  25%  {background-color: #dc3545; left:500px; top:0px;}
-  50%  {background-color:#ffff00a1;;top:0px; right:0px;}
+@keyframes ripple-1 {
+    0% {
+        transform: scale(1);
+        opacity: 1;
+    }
+
+    100% {
+        transform: scale(1.5);
+        opacity: 0;
+    }
+}
+
+@keyframes ripple-2 {
+    0% {
+        transform: scale(1);
+        opacity: 1;
+    }
+
+    100% {
+        transform: scale(1.7);
+        opacity: 0;
+    }
 }

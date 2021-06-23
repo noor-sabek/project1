@@ -15,5 +15,5 @@ let LeftNavbar =async () => {
 
 
 module.exports.Header= async () => {
-    return JSON.parse('{"LeftNavbar":'+JSON.stringify(await LeftNavbar())+','+"RightNavbar" :'+ JSON.stringify( await RightNavbar())+"}")
+    return JSON.parse('{"LeftNavbar":'+JSON.stringify(await LeftNavbar())+',"RightNavbar" :'+ JSON.stringify( await RightNavbar())+"}")
 }

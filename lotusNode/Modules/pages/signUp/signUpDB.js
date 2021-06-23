@@ -12,6 +12,11 @@ return await GeneralDb.query(
 }
 
 
+module.exports.insertdata = async(registrationInfo) =>{
+  console.log(registrationInfo)
+  return await GeneralDb.query( "INSERT INTO `users`( `name`, `password`, `confirmPass`, `email`) VALUES ("+req.body.name+","+req.body.password+","+req.body.confirmPass+","+req.body.email+");")
+}
+
 
 
 

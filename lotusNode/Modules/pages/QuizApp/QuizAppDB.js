@@ -13,12 +13,6 @@ let answerOptions =async () => {
   console.log("  QuizContent  in db")
   return await  GeneralDb.query("SELECT Qnum,answerText,isCorrect FROM `quiz-answeroptions`  ")
 }
-//
-// let QuizContent =async () => {
-//   console.log("  QuizContent  in db")
-// return await  GeneralDb.query("SELECT `quiz-questions`.`questionText`, `quiz-answeroptions`.`answerText`, `quiz-answeroptions`.`isCorrect` FROM `quiz` INNER JOIN `quiz-questions` ON `quiz-questions`.id = quiz.QuestionID INNER JOIN `quiz-answeroptions` ON `quiz-answeroptions`.`Qnum` = `quiz`.AnswersID")
-//
-// }
 
 
 let quizContent = async()=>{

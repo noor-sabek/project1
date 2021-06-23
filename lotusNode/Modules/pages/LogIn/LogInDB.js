@@ -10,6 +10,10 @@ let logInItems = async()=>{
 
 }
 
+let checkUser = async () =>{
+
+
+}
 
 module.exports.logInPageJ = async () => {
 

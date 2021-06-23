@@ -17,11 +17,11 @@ class Album extends React.Component {
               <div class="flip-card" key={img.id}>
                 <div class="flip-card-inner">
                     <div class="flip-card-front">
-                      <img  className="imgCard w3-animate-fading" src={img.src} />
+                      <img  className="imgCard  img-thumbnail " src={img.src} />
                     </div>
                     <div class="flip-card-back">
                       <h1>{img.name}</h1>
-                      <p>{img.info}</p>
+                      <p className="info">{img.info}</p>
                       <p>We love that toy</p>
                     </div>
                   </div>
@@ -31,9 +31,9 @@ class Album extends React.Component {
       });
         return (
             <ResponsiveMasonry
-                columnsCountBreakPoints={{350: 1,500: 2, 900: 3, 1200: 4}}
+                columnsCountBreakPoints={{350: 1,500: 2, 900:3 }}
             >
-            <h1 className="text-center Heading mt-5 py-5"> Some pictures </h1>
+            <h1 className="text-center w3-serif Heading mt-5 py-5"> Some pictures </h1>
                 <Masonry className="my-masonry-grid" columnClassName="my-masonry-grid_column">
                   {images}
                 </Masonry>

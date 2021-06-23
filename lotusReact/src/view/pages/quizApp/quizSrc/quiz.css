@@ -32,14 +32,22 @@ outline-color: #d0c01d;;
 
 }
 
-.Answers {
+.picture{
+
+  width:400px;
+  height:300px;
+}
+
+#Answers {
+
     padding: 10px;
-    border-left: 4px solid #FF3B3B;
-    background-color: #bbb;
-    margin: 0 0 5px;
+    border-left: 7px solid #a79a5a;;
+    background-color: #c5ae64 ;
+    margin: 0 0 8px;
+    list-style-type: none;
 
 }
-.Answers:hover{
+#Answers:hover{
     cursor: pointer;
     background-color: #dee2e6cc;
 
@@ -75,9 +83,13 @@ outline-color: #d0c01d;;
         text-shadow:  0px 0px 5px rgb(255 255 255);
     }
 
-    .correct{
+    #Answers .correct,
+    #Answers .correct:hover{
+
       background-color: green;
     }
-    .uncorrect{
+
+    .uncorrect , #Answers .uncorrect:hover{
+
       background-color:red;
     }
